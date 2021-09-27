@@ -1,0 +1,22 @@
+/*
+Theme Name: mytheme
+Theme URI: http://localhost/
+Author: Yassine LAYACHI
+Author URI: https://github.com/YL2120
+Description: My first theme !
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+.menu {
+    position: fixed;
+    top: 0px;
+}
+
+.admin-bar .menu {
+	top: 32px; /* on prend en compte le décalage */
+}
+
+.header{
+    text-align: center;
+}
