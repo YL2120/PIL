@@ -228,4 +228,39 @@ a {
   font-size: 5rem;
 }
 
+.c-main-largeBanner {
+  z-index: 1000;
+  height: 130px;
+}
+.c-main-largeBanner ul {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+}
+.c-main-largeBanner li {
+  list-style-type: none;
+  color: white;
+  font-size: 8.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  font-weight: 200;
+}
+.c-main-largeBanner li::after {
+  content: "/";
+  padding: 0 2rem;
+}
+.c-main-largeBanner li .sup {
+  color: #ffc33b;
+  margin-bottom: 3rem;
+  display: block;
+  font-size: 5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
