@@ -64,6 +64,9 @@ define( 'DB_CHARSET', getenv_docker('WORDPRESS_DB_CHARSET', 'utf8') );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
 
+/* Make WordPress install plugins directly */
+define('FS_METHOD', 'direct');
+
 /**#@+
  * Authentication unique keys and salts.
  *

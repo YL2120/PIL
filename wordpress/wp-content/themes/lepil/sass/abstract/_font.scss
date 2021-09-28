@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'II Vorkurs';
+  src: url('../assets/Fonts/IIVorkursLight.woff2') format('woff2'),
+    url('../assets/Fonts/IIVorkursLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'II Vorkurs';
+  src: url('../assets/Fonts/IIVorkursMedium.woff2') format('woff2'),
+    url('../assets/Fonts/IIVorkursMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'II Vorkurs';
+  src: url('../assets/Fonts/IIVorkursBold.woff2') format('woff2'),
+    url('../assets/Fonts/IIVorkursBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

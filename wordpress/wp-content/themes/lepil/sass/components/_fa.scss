@@ -1,0 +1,47 @@
+.fa__img {
+  margin-top: -18rem;
+  img {
+    width: 85%;
+  }
+}
+
+.fa__text {
+  h1 {
+    font-weight: 700;
+    font-size: 5rem;
+  }
+  .propos {
+    font-weight: 200;
+    font-size: 1.5rem;
+    word-spacing: 3px;
+  }
+  p {
+    @extend .propos;
+    font-size: 1.2rem;
+  }
+  ul {
+    columns: 2;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    padding: 0.5rem 0;
+    &::before {
+      content: '+';
+      color: $color-contrast;
+      padding-right: 2rem;
+    }
+  }
+  button {
+    background-color: white;
+    border-radius: 100px;
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+    margin-top: 3rem;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+}

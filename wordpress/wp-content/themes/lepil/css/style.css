@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("../assets/Fonts/IIVorkursLight.woff2") format("woff2"), url("../assets/Fonts/IIVorkursLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("../assets/Fonts/IIVorkursMedium.woff2") format("woff2"), url("../assets/Fonts/IIVorkursMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("../assets/Fonts/IIVorkursBold.woff2") format("woff2"), url("../assets/Fonts/IIVorkursBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-size: 16px;
+  font-family: "II Vorkurs", sans-serif !important;
+}
+
+body {
+  position: relative;
+}
+
+.l-main-header {
+  position: fixed;
+  width: 100%;
+  margin-top: -112px;
+  z-index: 10;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid white;
+}
+.header__container nav {
+  padding: 1rem 0;
+}
+.header__container img {
+  padding: 1rem 1rem;
+  border: 1px solid white;
+  background-color: white;
+}
+.header__container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row !important;
+  margin-left: 6rem;
+}
+.header__container li {
+  font-size: 1.2rem;
+}
+
+.header__socials {
+  height: calc(100vh - 110px);
+  width: 110px;
+  position: fixed;
+}
+.header__socials nav {
+  border-right: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
+.header__socials li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 1.5rem 0;
+}
+.header__socials ul {
+  padding: 0;
+  padding-bottom: 2rem;
+}
+
+.contact-item li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact-item li a:link, .contact-item li a:visited, .contact-item li a:focus {
+  color: white;
+}
+.contact-item li a:hover {
+  color: grey;
+}
+.contact-item li a button {
+  margin: 0;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 1rem 1.3rem;
+  color: white;
+  margin-left: 1rem;
+  border: 1px solid white;
+}
+.contact-item li a button:hover {
+  background-color: white;
+  color: black;
+}
+
+main {
+  margin-top: 112px;
+  width: 100%;
+}
+main > section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > section > div {
+  max-width: 1250px !important;
+}
+
+.fa__img {
+  margin-top: -18rem;
+}
+.fa__img img {
+  width: 85%;
+}
+
+.fa__text h1 {
+  font-weight: 700;
+  font-size: 5rem;
+}
+.fa__text .propos, .fa__text p {
+  font-weight: 200;
+  font-size: 1.5rem;
+  word-spacing: 3px;
+}
+.fa__text p {
+  font-size: 1.2rem;
+}
+.fa__text ul {
+  columns: 2;
+  margin: 0;
+  padding: 0;
+}
+.fa__text li {
+  list-style-type: none;
+  padding: 0.5rem 0;
+}
+.fa__text li::before {
+  content: "+";
+  color: #ffc33b;
+  padding-right: 2rem;
+}
+.fa__text button {
+  background-color: white;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  border: 1px solid black;
+  margin-top: 3rem;
+}
+.fa__text button:hover {
+  background-color: black;
+  color: white;
+}
+
+.full-image {
+  width: 1250px;
+  margin-left: 12rem;
+}
+
+.card {
+  min-width: 150px;
+  max-width: 150px;
+  height: 300px;
+}
+
+.card-img-top {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.top-container ul li {
+  list-style-type: none;
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+}
+.top-container ul li:before {
+  content: "+";
+  color: #ffc33b;
+  padding-right: 2rem;
+}
+
+.c-main-largeBanner {
+  z-index: 1000;
+  height: 130px;
+}
+.c-main-largeBanner ul {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+}
+.c-main-largeBanner li {
+  list-style-type: none;
+  color: white;
+  font-size: 8.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  font-weight: 200;
+}
+.c-main-largeBanner li::after {
+  content: "/";
+  padding: 0 2rem;
+}
+.c-main-largeBanner li .sup {
+  color: #ffc33b;
+  margin-bottom: 3rem;
+  display: block;
+  font-size: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

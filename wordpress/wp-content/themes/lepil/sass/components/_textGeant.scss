@@ -1,0 +1,34 @@
+.c-main-largeBanner {
+  z-index: 1000;
+  height: 130px;
+  ul {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+  }
+  li {
+    list-style-type: none;
+    color: white;
+    font-size: 8.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    font-weight: 200;
+    &::after {
+      content: '/';
+      padding: 0 2rem;
+    }
+    .sup {
+      color: $color-contrast;
+      margin-bottom: 3rem;
+      display: block;
+      font-size: 5rem;
+    }
+  }
+}
