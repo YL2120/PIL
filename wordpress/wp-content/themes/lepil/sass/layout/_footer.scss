@@ -25,19 +25,18 @@ footer{
             margin:0;
         }
     }
-   
+    ul {
+        list-style-type: none;
+        li {
+            font-size: 1.4rem;
+            padding: 0.5rem 0;
+        }
+    }
 }
 .separation {
     border-left: 1px solid white;
     padding-left: 3rem;
 }
-ul {
-    list-style-type: none;
-    li {
-        font-size: 1.4rem;
-        padding: 0.5rem 0;
-    }
-    }
 
 .confi{
     font-size:0.8rem;

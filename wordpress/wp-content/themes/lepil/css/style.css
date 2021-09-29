@@ -113,7 +113,6 @@ main > section {
 }
 main > section > div {
   max-width: 1250px !important;
-  margin-left: 6rem;
 }
 
 footer {
@@ -143,18 +142,17 @@ footer .left-column p {
   padding: 0;
   margin: 0;
 }
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
 
 .separation {
   border-left: 1px solid white;
   padding-left: 3rem;
-}
-
-ul {
-  list-style-type: none;
-}
-ul li {
-  font-size: 1.4rem;
-  padding: 0.5rem 0;
 }
 
 .confi {
@@ -210,6 +208,13 @@ ul li {
   height: 300px;
 }
 
+h1 {
+  padding: 0;
+  margin: 0;
+  line-height: 5rem;
+  font-size: 5rem;
+}
+
 .fa__img {
   margin-top: -5rem;
   display: flex;
@@ -232,7 +237,7 @@ ul li {
   word-spacing: 3px;
 }
 .fa__text p {
-  font-size: 1.2rem;
+  font-size: 1rem !important;
 }
 .fa__text ul {
   columns: 2;
@@ -412,7 +417,7 @@ a:hover {
 .top-container ul li {
   list-style-type: none;
   padding: 0.5rem 0;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
   color: grey;
 }
 .top-container ul li:before {
@@ -429,10 +434,14 @@ a:hover {
   margin-left: 14rem;
 }
 
+.top-col p {
+  width: 85%;
+}
+
 .c-main-preFooter div {
   width: 100%;
 }
-.c-main-preFooter h1 {
+.c-main-preFooter h4 {
   color: white;
   margin-left: 5.9rem;
 }
