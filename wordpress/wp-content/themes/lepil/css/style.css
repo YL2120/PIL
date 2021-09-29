@@ -19,7 +19,7 @@
 html {
   font-size: 16px;
   font-family: "II Vorkurs", sans-serif !important;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -38,10 +38,8 @@ body {
   flex-direction: row;
   border-bottom: 1px solid white;
 }
-.header__container nav {
-  padding: 1rem 0;
-}
 .header__container img {
+  height: 100%;
   padding: 1rem 1rem;
   border: 1px solid white;
   background-color: white;
@@ -133,7 +131,12 @@ footer > div > .row {
   margin-left: 6rem;
 }
 footer h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+footer .left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 footer .left-column p {
   font-size: 0.8rem;
@@ -149,10 +152,17 @@ footer .left-column p {
 ul {
   list-style-type: none;
 }
+ul li {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
 
 .confi {
   font-size: 0.8rem;
   color: grey;
+}
+.confi p {
+  margin: 0;
 }
 .confi a {
   color: white;
@@ -163,6 +173,41 @@ ul {
 }
 .confi a:hover {
   color: lightgrey;
+}
+
+.phone-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-info p {
+  display: inline;
+  text-align: center;
+  padding: 6rem 3rem;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 0;
+}
+
+.bottom-info p {
+  padding: 0;
+  margin: 0;
+}
+
+.made-by {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.made-by p {
+  margin: 0;
+  padding: 0;
+  color: grey;
+}
+
+.height-manager {
+  height: 300px;
 }
 
 .fa__img {
@@ -301,7 +346,7 @@ a:hover {
   font-size: 5rem;
 }
 .c-main-largeBanner li span {
-  font-size: 4rem;
+  font-size: 8.5rem;
 }
 
 .c-main-largeBanner {
@@ -339,7 +384,7 @@ a:hover {
   font-size: 5rem;
 }
 .c-main-largeBanner li span {
-  font-size: 4rem;
+  font-size: 8.5rem;
 }
 
 .top-margin {

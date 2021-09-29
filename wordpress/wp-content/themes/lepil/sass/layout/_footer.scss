@@ -13,9 +13,12 @@ footer{
         }
     }
     h4{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .left-column{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
         p{
             font-size:0.8rem;
             padding:0;
@@ -30,11 +33,18 @@ footer{
 }
 ul {
     list-style-type: none;
+    li {
+        font-size: 1.4rem;
+        padding: 0.5rem 0;
+    }
     }
 
 .confi{
     font-size:0.8rem;
     color:grey;
+    p{
+        margin:0;
+    }
     a {
         color: white;
         text-decoration: none;
@@ -47,4 +57,42 @@ ul {
           color: lightgrey;
         }
       }
+}
+
+
+.phone-info{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    p{
+        display:inline;
+        text-align: center;
+        padding: 6rem 3rem;
+        border: 1px solid white;
+        border-radius:100%;
+        margin:0
+    }
+}
+
+.bottom-info{
+    p{
+        padding:0;
+        margin:0;
+    }
+}
+
+.made-by{
+    font-size: 0.8rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    p{
+        margin:0;
+        padding:0;
+        color:grey;
+    }
+}
+
+.height-manager{
+    height:300px;
 }
