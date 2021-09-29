@@ -1,15 +1,49 @@
+.c-main-entreprise-container-titre {
+  h1 {
+    color: white;
+  }
+  p {
+  color: grey;
+  }
+}
+
 .card {
-  min-width: 150px;
-  max-width: 150px;
-  height: 300px;
+  background-color: rgb(33,33,33);
+  width: 10rem;
+  height: 15rem;
+  display: flex;
+  justify-content: space-between;
+
 }
 .card-img-top {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
   width: 32px;
   height: 32px;
 }
+
 a {
   color: white;
   text-decoration: none;
+  &:link,
+  &:visited,
+  &:focus {
+    color: white;
+  }
+  &:hover {
+    color: grey;
+  }
+}
+
+.arrow-oblique {
+  transform: rotate(225deg);
+}
+
+.all-enterprise > .card{
+    background-color: #171717;
+  .card-img-top{
+    width:64px!important;
+    height:64px!important;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(28deg) brightness(95%) contrast(80%);
+  }
 }

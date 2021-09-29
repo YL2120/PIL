@@ -3,9 +3,11 @@
 @import 'layout/html';
 @import 'layout/header';
 @import 'layout/main';
+@import 'layout/footer';
 @import 'components/fa';
-@import 'components/images';
+@import 'components/index/top-page/images';
 @import 'components/card';
-@import 'components/columns';
 @import 'components/textGeant';
 @import 'components/textGeant';
+@import 'components/index/top-page/toppage';
+@import 'components/preFooter';

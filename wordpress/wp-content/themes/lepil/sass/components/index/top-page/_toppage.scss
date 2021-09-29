@@ -1,0 +1,46 @@
+.top-margin {
+  margin-top: 6.5rem;
+  margin-bottom: 3rem;
+  h1{
+    font-size: 5rem;
+  }
+}
+
+.top-container{
+  // margin-left: 11.2rem;
+  margin-top: 6rem;
+  h3{
+    font-size: 1.2rem;
+  }
+  p{
+    font-size: 2.1rem;
+  }
+  ul {
+    margin-right: 5.5rem;
+    margin-left: 2.47rem;
+    text-indent: -2.47rem;
+    li {
+      list-style-type: none;
+      padding: 0.5rem 0;
+      font-size: 0.7rem;
+      color: grey;
+      
+      &:before {
+        content: '+';
+        color: $color-contrast;
+        padding-right: 2rem;
+      }
+    }
+  }
+ 
+  
+}
+
+.container-titles{
+  // margin-left: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.topdiv{
+  margin-left: 14rem;
+}

@@ -1,7 +1,12 @@
 .fa__img {
-  margin-top: -18rem;
+  margin-top: -5rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
   img {
-    width: 85%;
+    position: absolute;
+    width:30rem;
+    top:-8rem;
   }
 }
 
