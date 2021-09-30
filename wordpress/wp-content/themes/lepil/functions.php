@@ -30,3 +30,5 @@ function add_file_types_to_uploads($file_types)
     return $file_types;
 }
 add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+add_image_size('my_custom_size',1000,1000,false);

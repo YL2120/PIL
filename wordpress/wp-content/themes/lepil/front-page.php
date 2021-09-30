@@ -2,6 +2,9 @@
 get_header();
 $punchLine1 = get_field('punch_line');
 $punchLine2 = get_field('punch_line_2');
+$oembedVideo = get_field('oembed-video');
+$oembedImage = get_field('oembed-img');
+$image = $oembedImage['sizes']['my_custom_size'];
 ?>
 <main class="bg-dark"> <!--Début de la page-->
         <section class="mb-1">
@@ -11,7 +14,17 @@ $punchLine2 = get_field('punch_line_2');
                 <h1 class="fw-bold"><?php echo $punchLine2 ?></h1>
             </div>
                 
-                <img src="..\images\Mask Group 79@2x.jpg" class="img-fluid full-image" alt="">
+            <div class="full-image">
+                <?php
+                    if ($oembedVideo){
+                        echo '<iframe
+                        src="'. $oemebedVideo .'">
+                        </iframe>';
+                    } else {
+                        echo '<img src="'.$image.'" class="full-width" alt="">';
+                    }
+                ?>
+            </div>
             
             <div class="container top-container">
                 <div class="row">
