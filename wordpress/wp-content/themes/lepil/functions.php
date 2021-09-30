@@ -2,7 +2,7 @@
 function WPTheme_register_styles(){
 
 $version=wp_get_theme()->get( 'Version' );
-wp_enqueue_style('WPTheme-style',get_template_directory_uri(). "/css/style.css", array('WPTheme-bootstrap'), $version,'all');
+wp_enqueue_style('WPTheme-style',get_template_directory_uri(). "/style.css", array('WPTheme-bootstrap'), $version,'all');
 wp_enqueue_style('WPTheme-bootstrap',"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css", array(), '5.15.4','all');
 wp_enqueue_style('WPTheme-fontawesome',"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css", array(), '5.13.0','all');
 
