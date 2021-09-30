@@ -13,7 +13,7 @@
     <header class="l-main-header">
         <div class="header__container">
             <div class="header__img">
-                <img src="../images/logo.svg" alt="">
+                <img src="./wp-content/uploads/2021/09/logo.svg" alt="">
             </div>
             <nav class="navbar navbar-dark bg-dark navbar-expand-md w-100">
                 <div class="container-fluid">
