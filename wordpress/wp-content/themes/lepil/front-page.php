@@ -27,7 +27,7 @@ $imageFormation = get_field('image_formation');
 $introFormation = get_field('introduction_formation');
 $wysiwigFormation = get_field('wysiwig_formation');
 $repeaterFormation = get_field('repeater_formation');
-$imgFormation = $imageFormation['sizes']['my_custom_size'];
+$imgFormation = $imageFormation['sizes']['formationImgSize'];
 ?>
 
 <main class="bg-dark"> <!--Début de la page-->
