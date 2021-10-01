@@ -5,6 +5,20 @@ $punchLine2 = get_field('punch_line_2');
 $oembedVideo = get_field('oembed-video');
 $oembedImage = get_field('oembed-img');
 $image = $oembedImage['sizes']['my_custom_size'];
+$intro = get_field('introduction');
+$titre1 = get_field('titre1');
+$titre2 = get_field('titre2');
+$titre3 = get_field('titre3');
+$titre4 = get_field('titre4');
+$repeater1 = get_field('liste');
+$repeater2 = get_field('listes_suite');
+$gNombre1 = get_field('grand_nombre1');
+$gTexte1 = get_field('grand_texte1');
+$gNombre2 = get_field('grand_nombre2');
+$gTexte2 = get_field('grand_texte2');
+$gNombre3 = get_field('grand_nombre3');
+$gTexte3 = get_field('grand_texte3');
+
 ?>
 <main class="bg-dark"> <!--Début de la page-->
         <section class="mb-1">
@@ -16,65 +30,67 @@ $image = $oembedImage['sizes']['my_custom_size'];
                 
             <div class="full-image">
                 <?php
-if ($oembedVideo){
-    get_template_part('template-parts/content', 'video');
-} else {
-    get_template_part('template-parts/content', 'image');
-}                ?>
+                    if ($oembedVideo){
+                        get_template_part('template-parts/content', 'video');
+                    } else {
+                        get_template_part('template-parts/content', 'image');
+                    } ?>
             </div>
             
             <div class="container top-container">
                 <div class="row">
                     <div class="col-4 top-col">
-                        <p>Le plus grand cluster
-                            d'entreprises wallon
-                            dédié à l'audiovisuel,
-                            aux métiers du digital,
-                            au gaming et à l'AR/
-                            VR.</p>
+                        <p><?= $intro ?></p>
                     </div>
                     <div class="col-4">
                         <div class="container container-titles">
-                        <h3 class="fw-bold">Installation</h3>
-                        <h3 class="fw-bold">à la pointe</h3>
+                        <h3 class="fw-bold"><?= $titre1 ?></h3>
+                        <h3 class="fw-bold"><?= $titre2 ?></h3>
                     </div>
                     <ul class="w-100">
-                        <li>Salle de mixage</li>
-                        <li>Salles de montage son/image</li>
-                        <li>Salles d'étalonnage</li>
-                        <li>Centre dédié à I'AR/VR</li>
-                        <li>Studio green/white key</li>
-                        <li>Salles de réunion</li>
-                        <li>Espaces événementiels</li>
+                        <?php
+                            foreach($repeater1 as $element){
+                                foreach($element as $lines){
+                                    echo '<li>';
+                                    echo ($lines);
+                                    echo '</li>';
+                                }
+                            }
+                        ?>
                     </ul>
-
                     </div>
                     <div class="col-4">
                         <div class="container container-titles">
-                        <h3 class="fw-bold">Plus qu'un lieu </h3>
-                        <h3 class="fw-bold">de travail</h3>
+                        <h3 class="fw-bold"><?= $titre3 ?></h3>
+                        <h3 class="fw-bold"><?= $titre4 ?></h3>
                     </div>
                         <ul class="w-100">
-                        <li>Salle de sport totalement équipée avec vestiaires</li>
-                        <li>Salle de ressourcement pour une pause agréable</li>
-                        <li>Des espaces détentes répartis dans le bâtiment</li>
-                        <li>Une terrasse aménagée</li>
-                        <li>Une cafétéria équipée</li>
+                        <?php
+                            foreach($repeater2 as $element){
+                                foreach($element as $lines){
+                                    echo '<li>';
+                                    echo ($lines);
+                                    echo '</li>';
+                                }
+                            }
+                        ?>
                     </ul>
                     </div>
                 </div>
-
             </div>
-
             </div>
         </section>
         <!--fin de première section-->
         <!--début de 2ème section-->
         <section class="c-main-largeBanner mt-2 mb-2">
             <ul>
-                <li><span>30</span><span class="sup">+</span> entreprises</li>
-                <li><span>400</span><span class="sup">+</span> personnes</li>
-                <li><span>35</span><span class="sup">+</span> parking</li>
+                <li><span><?php echo $gNombre1?></span><span class="sup">+</span> <?php echo $gTexte1?></li>
+                <li><span><?php echo $gNombre2?></span><span class="sup">+</span> <?php echo $gTexte2?></li>
+                <?php 
+                    if ($gNombre3 || $gTexte3){
+                        echo '<li><span>'.$gNombre2.'</span><span class="sup">+</span> '.$gNombre2.'</li>';
+                    }
+                ?>
             </ul>
         </section>
         <!--fin de 2ème session-->
