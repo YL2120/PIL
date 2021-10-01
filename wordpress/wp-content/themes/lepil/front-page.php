@@ -5,8 +5,6 @@ $punchLine2 = get_field('punch_line_2');
 $oembedVideo = get_field('oembed-video');
 $oembedImage = get_field('oembed-img');
 $image = $oembedImage['sizes']['my_custom_size'];
-
-
 ?>
 <main class="bg-dark"> <!--Début de la page-->
         <section class="mb-1">
@@ -18,12 +16,11 @@ $image = $oembedImage['sizes']['my_custom_size'];
                 
             <div class="full-image">
                 <?php
-                    if ($oembedVideo){
-                        get_template_part('template-parts/content', 'video');
-                    } else {
-                        get_template_part('template-parts/content', 'image');
-                    }
-                ?>
+if ($oembedVideo){
+    get_template_part('template-parts/content', 'video');
+} else {
+    get_template_part('template-parts/content', 'image');
+}                ?>
             </div>
             
             <div class="container top-container">
