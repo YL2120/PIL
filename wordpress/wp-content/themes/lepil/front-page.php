@@ -18,8 +18,18 @@ $gNombre2 = get_field('grand_nombre2');
 $gTexte2 = get_field('grand_texte2');
 $gNombre3 = get_field('grand_nombre3');
 $gTexte3 = get_field('grand_texte3');
-
+$titreSecteurs1 = get_field('titre_secteur1');
+$titreSecteurs2 = get_field('titre_secteur2');
+$pSecteurs = get_field('paragraphe_secteur');
+$titreFormation1 = get_field('titre_introduction1');
+$titreFormation2 = get_field('titre_introduction2');
+$imageFormation = get_field('image_formation');
+$introFormation = get_field('introduction_formation');
+$wysiwigFormation = get_field('wysiwig_formation');
+$repeaterFormation = get_field('repeater_formation');
+$imgFormation = $imageFormation['sizes']['my_custom_size'];
 ?>
+
 <main class="bg-dark"> <!--Début de la page-->
         <section class="mb-1">
             <div class="text-white font-weight-bold topdiv">
@@ -97,13 +107,11 @@ $gTexte3 = get_field('grand_texte3');
         <!--début de 3ème section-->
         <section class="c-main-entreprise">
             <div class="c-main-entreprise-container-titre">
-                <h1>Vous avez un projet</h1>
-                <h1 class="text-warning"> audiovisuel ou digital ?</h1>
-                    <p>Une entreprise de Pôle peut vous aider !</p>
-
+                <h1><?= $titreSecteurs1 ?></h1>
+                <h1 class="text-warning"><?= $titreSecteurs2 ?></h1>
+                    <p><?= $pSecteurs ?></p>
                 <div class="carte-entreprises">
                     <div class="row">
-                        
                         <div class="col-md-2 col-lg-2 col-xl-2  ">
                             <div class="card">
                                 <img src="../images/cat-ar-vr.svg" class="card-img-top" alt="...">
@@ -163,7 +171,7 @@ $gTexte3 = get_field('grand_texte3');
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
                         <div class="fa__img">
-                            <img src="../images/Mask Group 89@2x.jpg" alt="">
+                            <img src="<?php echo $imgFormation ?>" alt="">
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
@@ -185,7 +193,7 @@ $gTexte3 = get_field('grand_texte3');
                                 <li>Motion Design</li>
                                 <li>Pro Tools</li>
                             </ul>
-                            <button class="redirect">Voir le site ACA +</button>
+                            <button class="redirect"><a href="#">Voir le site ACA +</a></button>
                         </div>
                     </div>
                 </div>
