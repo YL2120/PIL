@@ -113,6 +113,7 @@ main > section {
 }
 main > section > div {
   max-width: 1250px !important;
+  margin-left: 14rem;
 }
 
 footer {
@@ -218,13 +219,18 @@ h1 {
 .fa__img {
   margin-top: -5rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
 }
 .fa__img img {
   position: absolute;
   width: 30rem;
   top: -8rem;
+}
+
+.testCol {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .fa__text h1 {
@@ -448,7 +454,7 @@ a:hover {
 }
 
 .topdiv {
-  margin-left: 14rem;
+  width: 100%;
 }
 
 .top-col p {
@@ -460,7 +466,6 @@ a:hover {
 }
 .c-main-preFooter h4 {
   color: white;
-  margin-left: 5.9rem;
 }
 .c-main-preFooter ul {
   columns: 4;
@@ -473,7 +478,6 @@ a:hover {
   padding: 0.75rem 0;
   color: lightgrey;
   font-size: 1rem;
-  margin-left: 5.9rem;
 }
 .c-main-preFooter a {
   color: white;

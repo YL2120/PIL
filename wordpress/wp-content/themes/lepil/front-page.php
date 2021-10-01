@@ -29,7 +29,6 @@ $wysiwigFormation = get_field('wysiwig_formation');
 $repeaterFormation = get_field('repeater_formation');
 $imgFormation = $imageFormation['sizes']['formationImgSize'];
 ?>
-
 <main class="bg-dark"> <!--Début de la page-->
         <section class="mb-1">
             <div class="text-white font-weight-bold topdiv">
@@ -106,7 +105,7 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
         <!--fin de 2ème session-->
         <!--début de 3ème section-->
         <section class="c-main-entreprise">
-            <div class="c-main-entreprise-container-titre">
+            <div class="c-main-entreprise-container-titre w-100">
                 <h1><?= $titreSecteurs1 ?></h1>
                 <h1 class="text-warning"><?= $titreSecteurs2 ?></h1>
                     <p><?= $pSecteurs ?></p>
@@ -169,15 +168,15 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
         <section class="c-main-fa bg-white mb-1 pb-5">
             <div class="fa__container">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
+                    <div class="col-12 col-sm-5 col-lg-5 col-xl-5 testCol">
                         <div class="fa__img">
                             <img src="<?php echo $imgFormation ?>" alt="">
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
                         <div class="fa__text">
-                            <h1>Formations</h1>
-                            <h1>audiovisuel</h1>
+                            <h1><?= $titreFormation1?></h1>
+                            <h1><?= $titreFormation2?></h1>
                             <p class="propos">
                                 Vous souhaitez vous former à un métier ou une compétence en pénurie en Wallonie ?
                             </p>

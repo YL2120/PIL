@@ -1,13 +1,18 @@
 .fa__img {
   margin-top: -5rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
   img {
     position: absolute;
     width:30rem;
     top:-8rem;
   }
+}
+
+.testCol{
+  margin: 0!important;
+  padding: 0!important;
 }
 
 .fa__text {
