@@ -3,11 +3,6 @@
     margin-bottom: 6rem;
 }
 
-.image-center {
-    width: 100%;
-    margin-left: -20rem;
-}
-
 .cont-titre-nos-espaces {
     display: flex;
     flex-direction: column;
@@ -16,3 +11,13 @@
     }
 }
 
+.image-center{
+    width: 100%;
+    img{
+        width:100%;
+    }
+}
+
+main section.espace .no-max-w{
+    max-width: 100%!important;
+}
