@@ -1,0 +1,83 @@
+.secteurs__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none!important;
+    color: white!important;;
+    div:first-of-type{
+        width: 30%;
+    }
+    div:nth-of-type(2){
+        width: 70%;
+    }
+    .accordion-item{
+        width: 100%!important;
+        border:none;
+        background-color: transparent!important;
+    }
+    .accordion-button{
+        background-color: transparent!important;
+        padding: 1rem 0!important;
+        color:white;
+        &::after{
+            background-image: none;
+        }
+        &::before{
+            content: "+";
+            padding-right: 1rem;
+            color: $color-contrast;
+        }
+    }
+    .accordion-header{
+        background-color: transparent!important;
+    }
+}
+
+.sectors-list{
+    margin: 0;
+    padding: 0;
+    width: 100%!important;
+    form{
+        width: 100%;
+    }
+    ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0.5rem 0;
+        label{
+            width: 100%;
+            padding: 0 1rem;
+        }
+        input{
+            display: flex;
+            align-items: center;
+        }
+        input[type='checkbox']{
+           opacity: 0;
+           z-index: 3;
+        }
+        .custom-check{
+            border: 1px solid $color-contrast;
+            width: 15px;
+            height: 15px;
+            display: block;
+            position: absolute;
+            left: 0;
+            z-index: 2;
+            border-radius: 3px;
+        }
+        input[type='checkbox']:checked ~ .custom-check{
+            background-color: $color-contrast;
+        }
+    }
+}
