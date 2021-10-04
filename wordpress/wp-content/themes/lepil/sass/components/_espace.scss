@@ -1,0 +1,18 @@
+.container-espace {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.image-center {
+    width: 100%;
+    margin-left: -20rem;
+}
+
+.cont-titre-nos-espaces {
+    display: flex;
+    flex-direction: column;
+    .titre-nos-espaces {
+        padding-left: 0;
+    }
+}
+
