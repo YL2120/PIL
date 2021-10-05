@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="l-main-header">
+      <div class="header__container">
+        <div class="header__img">
+          <img src="../images/logo.svg" alt="" />
+        </div>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md w-100">
+          <div class="container-fluid">
+            <!-- Le bouton s'affichera en petit écran -->
+            <button
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#monMenuDeroulant"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="monMenuDeroulant">
+              <ul class="navbar-nav m-0 p-0">
+                <li class="nav-item mx-3">
+                  <a href="#" class="nav-link active">Les entreprises</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a href="#" class="nav-link">Nos espaces</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a href="#" class="nav-link">Formations</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a href="#" class="nav-link">Le Pôle</a>
+                </li>
+              </ul>
+              <ul class="d-flex justify-content-end contact-item mb-0 w-25">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    Contact
+                    <button type="button">
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="header__socials d-none d-sm-block">
+      <nav
+        class="
+          nav-socials
+          h-100
+          d-flex
+          align-items-end
+          navbar-dark
+          bg-dark
+          text-white
+        "
+      >
+        <ul>
+          <li>Fb</li>
+          <li>Tw</li>
+          <li>Lk</li>
+          <li>In</li>
+        </ul>
+      </nav>
+    </div>
+    <main class="bg-dark">
+      <!-- TITRE + PARAGRAHPE-->
+      <section class="mb-1 lepole-top">
+        <div class="mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 text-white">
+                <h1 class="title_size">
+                  Le <span class="text-warning">grand cluster </span> dédié aux
+                  industries créatives
+                </h1>
+              </div>
+              <div class="col-6 text-white d-flex align-items-end pole-div">
+                <p class="par-style">Installé dans une ancienne fabrique de 
+                    tabac totalement rénovée, le Pôle est 
+                    devenu le plus grand cluster d'entreprises 
+                    wallon dédié à l'audiovisuel, aux métiers du
+                    digital ainsi qu'au gaming et à l'AR/VR.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMAGE OU VIDEO-->
+      <section class="mb-1 bg-white">
+        <div>
+          <div class="full-image image-l">
+            <img
+              src="..\images\Mask Group 79@2x.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- BANNIERE -->
+      <section class="c-main-largeBanner mt-1 mb-2">
+        <ul>
+          <li><span>30</span><span class="sup">+</span> entreprises</li>
+          <li><span>400</span><span class="sup">+</span> personnes</li>
+          <li><span>35</span><span class="sup">+</span> parking</li>
+        </ul>
+      </section>
+
+      // CARDS
+
+      <section class="mb-1 bg-white">
+        <div>
+          <div class="mb-4">
+            <h4 class="">Nos équipes</h4>
+          </div>
+          <div class="container ">
+            <div class="row">
+              <div class="col-4">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img_avatar.png" alt="Avatar" />
+                    </div>
+                    <div
+                      class="
+                        flip-card-back
+                        bg-warning
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      "
+                    >
+                      <div class="mt-4">
+                        <h5>Ester</h5>
+                      </div>
+
+                      <div>
+                        <p>Administratif / accueil</p>
+                        <p>ester@lepole.be</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img_avatar.png" alt="Avatar" />
+                    </div>
+                    <div
+                      class="
+                        flip-card-back
+                        bg-warning
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      "
+                    >
+                      <div class="mt-4">
+                        <h5>Ester</h5>
+                      </div>
+
+                      <div>
+                        <p>Administratif / accueil</p>
+                        <p>ester@lepole.be</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img_avatar.png" alt="Avatar" />
+                    </div>
+                    <div
+                      class="
+                        flip-card-back
+                        bg-warning
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      "
+                    >
+                      <div class="mt-4">
+                        <h5>Ester</h5>
+                      </div>
+
+                      <div>
+                        <p>Administratif / accueil</p>
+                        <p>ester@lepole.be</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container  mt-5">
+            <div class="row">
+              <div class="col-4">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img_avatar.png" alt="Avatar" />
+                    </div>
+                    <div
+                      class="
+                        flip-card-back
+                        bg-warning
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      "
+                    >
+                      <div class="mt-4">
+                        <h5>Ester</h5>
+                      </div>
+
+                      <div>
+                        <p>Administratif / accueil</p>
+                        <p>ester@lepole.be</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img_avatar.png" alt="Avatar" />
+                    </div>
+                    <div
+                      class="
+                        flip-card-back
+                        bg-warning
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      "
+                    >
+                      <div class="mt-4">
+                        <h5>Ester</h5>
+                      </div>
+
+                      <div>
+                        <p>Administratif / accueil</p>
+                        <p>ester@lepole.be</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img_avatar.png" alt="Avatar" />
+                    </div>
+                    <div
+                      class="
+                        flip-card-back
+                        bg-warning
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      "
+                    >
+                      <div class="mt-4">
+                        <h5>Ester</h5>
+                      </div>
+
+                      <div>
+                        <p>Administratif / accueil</p>
+                        <p>ester@lepole.be</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white">
+      <div class="test">
+        <div class="row">
+          <div class="col-5">
+            <div class="row height-manager">
+              <div class="col-4 left-column">
+                <h4>Pôle Image de Liège</h4>
+                <div class="bottom-info">
+                  <p>info@lepole.be</p>
+                  <p>Rue de Mulhouse, 36</p>
+                  <p>4020 Liège, Belgique</p>
+                </div>
+              </div>
+              <div class="col-8 phone-info">
+                <p class="rounded-circle">+32 4 239 69 01</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-7 separation">
+            <div class="row height-manager">
+              <div class="col-6 d-flex justify-content-between flex-column">
+                <ul>
+                  <li><a href="#">Les entreprises</a></li>
+                  <li><a href="#">Nos espaces</a></li>
+                  <li><a href="#">Le Pôle</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="confi">
+                  <p>Le Pôle image © 2021</p>
+                  <a href="#">Politique de confidentialité</a>
+                </div>
+              </div>
+              <div class="col-6 made-by">
+                <p>
+                  design by
+                  <a class="text-white" href="#">savoirfaire.digital</a>
+                </p>
+                <p>Coding by <a class="text-white" href="#">becode.org</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
