@@ -565,11 +565,11 @@ a:hover {
 .container-flipcards {
   margin-left: -9rem;
 }
+
 .c-main-secteurs {
   height: 100%;
   padding-top: 3rem;
 }
-
 
 .secteurs__container {
   width: 100%;
@@ -847,11 +847,13 @@ button:hover {
 
 .image-center-outils img {
   margin-top: 4rem;
+  margin-bottom: 4rem;
   width: 100%;
 }
 
 .image-center-espace {
   width: 100%;
+  margin-top: 4rem;
 }
 .image-center-espace img {
   width: 100%;
@@ -859,6 +861,64 @@ button:hover {
 
 main section.espace .no-max-w {
   max-width: 100% !important;
+}
+
+.accordion-item {
+  border-bottom: 0.5px solid #656565;
+  color: white;
+}
+.accordion-item :hover {
+  background-color: #171717;
+  color: white;
+}
+
+.accordion-button {
+  background-color: #171717 !important;
+  border: none !important;
+  color: white;
+}
+
+.accordion-header {
+  border: none !important;
+}
+.accordion-header .accordion-header:hover {
+  border: none;
+}
+
+.accordion-body {
+  background-color: #171717;
+}
+.accordion-body p {
+  color: white;
+}
+
+.container-titles h3 {
+  color: white !important;
+}
+
+li {
+  color: white;
+  font-weight: lighter;
+  list-style: none;
+}
+
+h2 {
+  color: white;
+}
+
+.accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active {
+  text-decoration: none !important;
+  box-shadow: 0px !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem transparent !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("images/add.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

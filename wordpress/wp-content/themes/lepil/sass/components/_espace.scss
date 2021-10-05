@@ -45,18 +45,17 @@ main section.espace .no-max-w{
     background-color: black;
     color: white;
   }
-
-
-
 .image-center-outils {
     img{
         margin-top: 4rem;
+        margin-bottom: 4rem;
         width: 100%;
     }
 }
 
 .image-center-espace{
     width: 100%;
+    margin-top: 4rem;
     img{
         width:100%;
     }
@@ -65,6 +64,84 @@ main section.espace .no-max-w{
 main section.espace .no-max-w{
     max-width: 100%!important;
 }
+
+.accordion-item {
+    border-bottom: 0.5px solid #656565;
+    color: white;
+    :hover {
+        background-color: #171717;
+        color: white;
+    }
+}
+.accordion-button {
+    background-color: #171717 !important;
+    border: none !important;
+    color: white;
+}
+
+.accordion-header {
+    border: none !important;
+    .accordion-header:hover {
+        border: none;
+    }
+}
+
+.accordion-body {
+    background-color: #171717;
+    p {
+        color: white;
+    }
+}
+
+.container-titles {
+    h3 {
+        color: white !important;
+    }
+}
+
+li {
+        color: white;
+        font-weight: lighter;
+        list-style: none;
+
+    }
+
+h2 {
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    //color: #FFF  !important;
+    //background-color: #5500C9 !important;
+  }
+  
+  
+  
+  .accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active  {
+    //background-color: #5500C9 !important;
+      //color:#FFF !important;
+      text-decoration: none !important;
+       //border: none !important;
+         //border-color: #FFF !important;
+      box-shadow: 0px !important;
+  
+  
+  }
+  
+  .accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 0 0 .1rem transparent !important;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("images/add.svg");
+    //transform: translate('45deg');
+  }
+
+  
+
+
     
 
 
