@@ -105,7 +105,7 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
         <!--fin de 2ème session-->
         <!--début de 3ème section-->
         <section class="c-main-entreprise">
-            <div class="c-main-entreprise-container-titre w-100">
+            <div class="c-main-entreprise-container-titre">
                 <h1><?= $titreSecteurs1 ?></h1>
                 <h1 class="text-warning"><?= $titreSecteurs2 ?></h1>
                     <p><?= $pSecteurs ?></p>
@@ -113,7 +113,7 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
                     <div class="row">
                         <div class="col-md-2 col-lg-2 col-xl-2  ">
                             <div class="card">
-                                <img src="../images/cat-ar-vr.svg" class="card-img-top" alt="...">
+                                <img src="./wp-content/themes/lepil/images/cat-image.svg" class="card-img-top" alt="...">
                                 <div class="card-footer">
                                   <a href="#">Image</a>
                                 </div>
@@ -121,7 +121,7 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2  ">
                             <div class="card">
-                                <img src="../images/cat-son.svg" class="card-img-top" alt="...">
+                                <img src="./wp-content/themes/lepil/images/cat-son.svg" class="card-img-top" alt="...">
                                 <div class="card-footer">
                                   <a href="#">Ar / Vr</a>
                                 </div>
@@ -129,7 +129,7 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2  ">
                             <div class="card">
-                                <img src="../images/arrow-down.svg" class="card-img-top arrow-oblique" alt="...">
+                                <img src="./wp-content/themes/lepil/images/arrow-down.svg" class="card-img-top arrow-oblique" alt="...">
                                 <div class="card-footer">
                                   <a href="#">Son</a>
                                 </div>
@@ -137,7 +137,7 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2  ">
                             <div class="card">
-                                <img src="../images/cat-digital (2).svg" class="card-img-top" alt="...">
+                                <img src="./wp-content/themes/lepil/images/cat-digital (2).svg" class="card-img-top" alt="...">
                                 <div class="card-footer">
                                   <a href="#">Digital</a>
                                 </div>
@@ -145,7 +145,7 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2 ">
                             <div class="card">
-                                <img src="../images/cat-image.svg" class="card-img-top" alt="...">
+                                <img src="./wp-content/themes/lepil/images/cat-image.svg" class="card-img-top" alt="...">
                                 <div class="card-footer">
                                     <a href="#">Digital</a>
                                 </div>
@@ -153,7 +153,7 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2 all-enterprise">
                             <div class="card justify-content-center align-items-center">
-                                <img src="../images/arrow-down.svg" class="card-img-top arrow-oblique m-0" alt="...">
+                                <img src="./wp-content/themes/lepil/images/arrow-down.svg" class="card-img-top arrow-oblique m-0" alt="...">
                                 <div class="card-footer ">
                                   <a href="#">Voir toutes les entreprises</a>
                                 </div>
@@ -168,7 +168,7 @@ $imgFormation = $imageFormation['sizes']['formationImgSize'];
         <section class="c-main-fa bg-white mb-1 pb-5">
             <div class="fa__container">
                 <div class="row">
-                    <div class="col-12 col-sm-5 col-lg-5 col-xl-5 testCol">
+                    <div class="col-12 col-sm-5 col-lg-6 col-xl-6 testCol">
                         <div class="fa__img">
                             <img src="<?php echo $imgFormation ?>" alt="">
                         </div>

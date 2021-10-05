@@ -37,3 +37,16 @@ add_image_size('formationImgSize',true);
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
+
+function lePil_menus(){   // setting menu for WordPress
+
+    $locations=array(
+        'primary' => "Desktop Primary Left Sidebar",
+        'footer' => "Footer Menu Items"
+    );
+
+    register_nav_menus($locations);
+
+}
+
+add_action('init','lePil_menus');

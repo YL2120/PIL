@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr" class='bg-dark'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="l-main-header">
+        <div class="header__container">
+            <div class="header__img">
+                <img src="../images/logo.svg" alt="">
+            </div>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-md w-100">
+                <div class="container-fluid">
+                    <!-- Le bouton s'affichera en petit écran -->
+                    <button class="navbar-toggler" data-bs-toggle="collapse"                    data-bs-target="#monMenuDeroulant">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+             
+                    <div class="collapse navbar-collapse" id="monMenuDeroulant">
+                        <ul class="navbar-nav m-0 p-0">
+                            <li class="nav-item mx-3">
+                                <a href="#" class="nav-link active">Les entreprises</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a href="#" class="nav-link">Nos espaces</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a href="#" class="nav-link">Formations</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a href="#" class="nav-link">Le Pôle</a>
+                            </li>
+                        </ul>
+                        <ul class="d-flex justify-content-end contact-item mb-0 w-25">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Contact
+                                    <button type="button"><i class="fas fa-arrow-right"></i></button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="header__socials d-none d-sm-block">
+        <nav class="nav-socials h-100 d-flex align-items-end navbar-dark bg-dark text-white">
+            <ul>
+                <li>Fb</li>
+                <li>Tw</li>
+                <li>Lk</li>
+                <li>In</li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="c-main-secteurs bg-dark">
+            <div class="secteurs__container">
+                <div class="secteurs__sideMenu">
+                    <div class="test">
+                        <h1>secteurs</h1>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item w-100">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Image 
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse w-100 show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body w-100">
+                                 <div class="sectors-list">
+                                     <form action="#">
+                                         <ul>
+                                             <li>
+                                                 <label for="c1">
+                                                     Formation
+                                                 </label>
+                                                 <input type="checkbox" name="choice1" id="c1">
+                                                 <span class="custom-check"></span>
+                                             </li>
+                                             <li>
+                                                <label for="c2">
+                                                    Création de site web
+                                                </label>
+                                                <input type="checkbox" name="choice2" id="c2">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c3">
+                                                    Graphisme
+                                                </label>
+                                                <input type="checkbox" name="choice3" id="c3">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c4">
+                                                    Marketing
+                                                </label>
+                                                <input type="checkbox" name="choice4" id="c4">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c5">
+                                                    Développement logiciel
+                                                </label>
+                                                <input type="checkbox" name="choice5" id="c5">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c6">
+                                                    Finance
+                                                </label>
+                                                <input type="checkbox" name="choice6" id="c6">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c7">
+                                                    Assurance
+                                                </label>
+                                                <input type="checkbox" name="choice7" id="c7">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c8">
+                                                    Fintech
+                                                </label>
+                                                <input type="checkbox" name="choice8" id="c8">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c9">
+                                                    Documentaire
+                                                </label>
+                                                <input type="checkbox" name="choice9" id="c9">
+                                                <span class="custom-check"></span>
+                                            </li>
+    
+                                         </ul>
+                                     </form>
+                                 </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item w-100">
+                                <h2 class="accordion-header" id="headingTwo">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Son
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse w-100" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body w-100">
+                                    <div class="sectors-list">
+                                        <form action="#">
+                                            <ul>
+                                                <li>
+                                                    <label for="c1">
+                                                        Formation
+                                                    </label>
+                                                    <input type="checkbox" name="choice1" id="c1">
+                                                    <span class="custom-check"></span>
+                                                </li>
+                                                <li>
+                                                   <label for="c2">
+                                                       Création de site web
+                                                   </label>
+                                                   <input type="checkbox" name="choice2" id="c2">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c3">
+                                                       Graphisme
+                                                   </label>
+                                                   <input type="checkbox" name="choice3" id="c3">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c4">
+                                                       Marketing
+                                                   </label>
+                                                   <input type="checkbox" name="choice4" id="c4">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c5">
+                                                       Développement logiciel
+                                                   </label>
+                                                   <input type="checkbox" name="choice5" id="c5">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c6">
+                                                       Finance
+                                                   </label>
+                                                   <input type="checkbox" name="choice6" id="c6">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c7">
+                                                       Assurance
+                                                   </label>
+                                                   <input type="checkbox" name="choice7" id="c7">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c8">
+                                                       Fintech
+                                                   </label>
+                                                   <input type="checkbox" name="choice8" id="c8">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c1">
+                                                       Documentaire
+                                                   </label>
+                                                   <input type="checkbox" name="choice9" id="c9">
+                                                   <span class="custom-check"></span>
+                                               </li>
+       
+                                            </ul>
+                                        </form>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item w-100">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Digital
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse w-100" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body w-100">
+                                    <div class="sectors-list">
+                                        <form action="#">
+                                            <ul>
+                                                <li>
+                                                    <label for="c1">
+                                                        Formation
+                                                    </label>
+                                                    <input type="checkbox" name="choice1" id="c1">
+                                                    <span class="custom-check"></span>
+                                                </li>
+                                                <li>
+                                                   <label for="c2">
+                                                       Création de site web
+                                                   </label>
+                                                   <input type="checkbox" name="choice2" id="c2">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c3">
+                                                       Graphisme
+                                                   </label>
+                                                   <input type="checkbox" name="choice3" id="c3">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c4">
+                                                       Marketing
+                                                   </label>
+                                                   <input type="checkbox" name="choice4" id="c4">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c5">
+                                                       Développement logiciel
+                                                   </label>
+                                                   <input type="checkbox" name="choice5" id="c5">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c6">
+                                                       Finance
+                                                   </label>
+                                                   <input type="checkbox" name="choice6" id="c6">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c7">
+                                                       Assurance
+                                                   </label>
+                                                   <input type="checkbox" name="choice7" id="c7">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c8">
+                                                       Fintech
+                                                   </label>
+                                                   <input type="checkbox" name="choice8" id="c8">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c1">
+                                                       Documentaire
+                                                   </label>
+                                                   <input type="checkbox" name="choice9" id="c9">
+                                                   <span class="custom-check"></span>
+                                               </li>
+       
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item w-100">
+                                <h2 class="accordion-header" id="headingFour">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Gaming
+                                  </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse w-100" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body w-100">
+                                    <div class="sectors-list">
+                                        <form action="#">
+                                            <ul>
+                                                <li>
+                                                    <label for="c1">
+                                                        Formation
+                                                    </label>
+                                                    <input type="checkbox" name="choice1" id="c1">
+                                                    <span class="custom-check"></span>
+                                                </li>
+                                                <li>
+                                                   <label for="c2">
+                                                       Création de site web
+                                                   </label>
+                                                   <input type="checkbox" name="choice2" id="c2">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c3">
+                                                       Graphisme
+                                                   </label>
+                                                   <input type="checkbox" name="choice3" id="c3">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c4">
+                                                       Marketing
+                                                   </label>
+                                                   <input type="checkbox" name="choice4" id="c4">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c5">
+                                                       Développement logiciel
+                                                   </label>
+                                                   <input type="checkbox" name="choice5" id="c5">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c6">
+                                                       Finance
+                                                   </label>
+                                                   <input type="checkbox" name="choice6" id="c6">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c7">
+                                                       Assurance
+                                                   </label>
+                                                   <input type="checkbox" name="choice7" id="c7">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c8">
+                                                       Fintech
+                                                   </label>
+                                                   <input type="checkbox" name="choice8" id="c8">
+                                                   <span class="custom-check"></span>
+                                               </li>
+                                               <li>
+                                                   <label for="c1">
+                                                       Documentaire
+                                                   </label>
+                                                   <input type="checkbox" name="choice9" id="c9">
+                                                   <span class="custom-check"></span>
+                                               </li>
+       
+                                            </ul>
+                                        </form>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item w-100">
+                                <h2 class="accordion-header" id="headingFive">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    Ar / Vr
+                                  </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse w-100" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body w-100">
+                                                                <div class="sectors-list">
+                                     <form action="#">
+                                         <ul>
+                                             <li>
+                                                 <label for="c1">
+                                                     Formation
+                                                 </label>
+                                                 <input type="checkbox" name="choice1" id="c1">
+                                                 <span class="custom-check"></span>
+                                             </li>
+                                             <li>
+                                                <label for="c2">
+                                                    Création de site web
+                                                </label>
+                                                <input type="checkbox" name="choice2" id="c2">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c3">
+                                                    Graphisme
+                                                </label>
+                                                <input type="checkbox" name="choice3" id="c3">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c4">
+                                                    Marketing
+                                                </label>
+                                                <input type="checkbox" name="choice4" id="c4">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c5">
+                                                    Développement logiciel
+                                                </label>
+                                                <input type="checkbox" name="choice5" id="c5">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c6">
+                                                    Finance
+                                                </label>
+                                                <input type="checkbox" name="choice6" id="c6">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c7">
+                                                    Assurance
+                                                </label>
+                                                <input type="checkbox" name="choice7" id="c7">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c8">
+                                                    Fintech
+                                                </label>
+                                                <input type="checkbox" name="choice8" id="c8">
+                                                <span class="custom-check"></span>
+                                            </li>
+                                            <li>
+                                                <label for="c1">
+                                                    Documentaire
+                                                </label>
+                                                <input type="checkbox" name="choice9" id="c9">
+                                                <span class="custom-check"></span>
+                                            </li>
+    
+                                         </ul>
+                                     </form>
+                                 </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="secteurs__content">
+                    <form class="content__search" action='#' method="GET">
+                        <label for="search" class='label-input-icon'>
+                            <input type="search " placeholder='Search...' id='search' name="search">
+                            <i class="fas fa-search" for='search'></i>
+                        </label>
+                    </form>
+                    <div class="content_accordion">
+                        <div class="accordion" id="accordionExample2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingA">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseA" aria-expanded="true" aria-controls="collapseA">
+                                    Mikros
+                                    <div class="tags">
+                                        <span class="tag">Audio</span>
+                                        <span class="tag">VR</span>
+                                        <span class="tag">Gaming</span>
+                                        <span class="tag">Couscous</span>
+                                    </div>
+                                </button>
+                                </h2>
+                                <div id="collapseA" class="accordion-collapse collapse show" aria-labelledby="headingA" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <div class="body__img">
+                                        <img src="../images/Image 63@2x.jpg" alt="">
+                                    </div>
+                                    <div class="body__info">
+                                        <div class="info__top">
+                                        <a href="tel:+3242669800">+32 (0)42 66 98 00</a>
+                                        <a href="mailto:info.liege@mikrosimages.eu">info.liege@mikrosimages.eu</a>
+                                        <a href="https://mikrosimage.be">mikrosimage.be</a>
+                                        </div>
+                                        <div class="info__bot">
+                                            <p>VFX – Effets Spéciaux – Post-production – Animation</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingB">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseB" aria-expanded="true" aria-controls="collapseB">
+                                    Mikros
+                                    <div class="tags">
+                                        <span class="tag">Audio</span>
+                                        <span class="tag">VR</span>
+                                        <span class="tag">Gaming</span>
+                                        <span class="tag">Couscous</span>
+                                    </div>
+                                </button>
+                                </h2>
+                                <div id="collapseB" class="accordion-collapse collapse" aria-labelledby="headingB" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <div class="body__img">
+                                        <img src="../images/Image 63@2x.jpg" alt="">
+                                    </div>
+                                    <div class="body__info">
+                                        <div class="info__top">
+                                        <a href="tel:+3242669800">+32 (0)42 66 98 00</a>
+                                        <a href="mailto:info.liege@mikrosimages.eu">info.liege@mikrosimages.eu</a>
+                                        <a href="https://mikrosimage.be">mikrosimage.be</a>
+                                        </div>
+                                        <div class="info__bot">
+                                            <p>VFX – Effets Spéciaux – Post-production – Animation</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingC">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseC" aria-expanded="true" aria-controls="collapseC">
+                                    Mikros
+                                    <div class="tags">
+                                        <span class="tag">Audio</span>
+                                        <span class="tag">VR</span>
+                                        <span class="tag">Gaming</span>
+                                        <span class="tag">Couscous</span>
+                                    </div>
+                                </button>
+                                </h2>
+                                <div id="collapseC" class="accordion-collapse collapse" aria-labelledby="headingC" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <div class="body__img">
+                                        <img src="../images/Image 63@2x.jpg" alt="">
+                                    </div>
+                                    <div class="body__info">
+                                        <div class="info__top">
+                                        <a href="tel:+3242669800">+32 (0)42 66 98 00</a>
+                                        <a href="mailto:info.liege@mikrosimages.eu">info.liege@mikrosimages.eu</a>
+                                        <a href="https://mikrosimage.be">mikrosimage.be</a>
+                                        </div>
+                                        <div class="info__bot">
+                                            <p>VFX – Effets Spéciaux – Post-production – Animation</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingD">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseD" aria-expanded="true" aria-controls="collapseD">
+                                    Mikros
+                                    <div class="tags">
+                                        <span class="tag">Audio</span>
+                                        <span class="tag">VR</span>
+                                        <span class="tag">Gaming</span>
+                                        <span class="tag">Couscous</span>
+                                    </div>
+                                </button>
+                                </h2>
+                                <div id="collapseD" class="accordion-collapse collapse" aria-labelledby="headingD" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <div class="body__img">
+                                        <img src="../images/Image 63@2x.jpg" alt="">
+                                    </div>
+                                    <div class="body__info">
+                                        <div class="info__top">
+                                        <a href="tel:+3242669800">+32 (0)42 66 98 00</a>
+                                        <a href="mailto:info.liege@mikrosimages.eu">info.liege@mikrosimages.eu</a>
+                                        <a href="https://mikrosimage.be">mikrosimage.be</a>
+                                        </div>
+                                        <div class="info__bot">
+                                            <p>VFX – Effets Spéciaux – Post-production – Animation</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingE">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseE" aria-expanded="true" aria-controls="collapseE">
+                                    Mikros
+                                    <div class="tags">
+                                        <span class="tag">Audio</span>
+                                        <span class="tag">VR</span>
+                                        <span class="tag">Gaming</span>
+                                        <span class="tag">Couscous</span>
+                                    </div>
+                                </button>
+                                </h2>
+                                <div id="collapseE" class="accordion-collapse collapse" aria-labelledby="headingE" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <div class="body__img">
+                                        <img src="../images/Image 63@2x.jpg" alt="">
+                                    </div>
+                                    <div class="body__info">
+                                        <div class="info__top">
+                                        <a href="tel:+3242669800">+32 (0)42 66 98 00</a>
+                                        <a href="mailto:info.liege@mikrosimages.eu">info.liege@mikrosimages.eu</a>
+                                        <a href="https://mikrosimage.be">mikrosimage.be</a>
+                                        </div>
+                                        <div class="info__bot">
+                                            <p>VFX – Effets Spéciaux – Post-production – Animation</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
