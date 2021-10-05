@@ -492,6 +492,80 @@ a:hover {
   color: lightgrey;
 }
 
+<<<<<<< HEAD
+.pole-div {
+  margin-top: 22rem;
+}
+
+.title_size {
+  font-size: 4.65rem;
+}
+
+.image-l {
+  margin-top: -15rem;
+}
+
+.par-style {
+  white-space: pre-line;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-front img {
+  width: 250px;
+  height: 300px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back p {
+  line-height: 1rem;
+}
+
+.container-flipcards {
+  margin-left: -9rem;
+=======
 .c-main-secteurs {
   height: 100%;
   padding-top: 3rem;
@@ -785,6 +859,7 @@ button:hover {
 
 main section.espace .no-max-w {
   max-width: 100% !important;
+>>>>>>> 700acda5d9cb451a5f2b275e09776d1c2f5fa2cd
 }
 
 /*# sourceMappingURL=style.css.map */
