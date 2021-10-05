@@ -21,3 +21,51 @@
 main section.espace .no-max-w{
     max-width: 100%!important;
 }
+
+.redirect-espace {
+    background-color: white;
+    border-radius: 100px;
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+    margin-top: 3rem;
+    a {
+      color: black;
+      text-decoration: none;
+      &:link,
+      &:visited,
+      &:focus {
+        color: black;
+      }
+      &:hover {
+        color: grey!important;
+      }
+    }
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+
+.image-center-outils {
+    img{
+        margin-top: 4rem;
+        width: 100%;
+    }
+}
+
+.image-center-espace{
+    width: 100%;
+    img{
+        width:100%;
+    }
+}
+
+main section.espace .no-max-w{
+    max-width: 100%!important;
+}
+    
+
+
+
