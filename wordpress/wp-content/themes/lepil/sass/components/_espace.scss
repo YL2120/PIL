@@ -190,3 +190,32 @@ main section.espace .no-max-w {
     transform: rotate(300deg);
 
 }
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.espace-cta{
+  &>div{
+    width: 100%;
+    max-width: 100%!important;
+    position: relative;
+  }
+  .top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    margin-left: 10%;
+    &>*{
+      text-align: left;
+    }
+  }
+}
