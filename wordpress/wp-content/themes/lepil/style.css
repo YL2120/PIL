@@ -513,10 +513,12 @@ a:hover {
 
 .image-l {
   margin-top: -23rem;
+  width: 1200px;
 }
 
 .par-style {
   white-space: pre-line;
+  padding: 2.5rem;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -578,11 +580,11 @@ a:hover {
 }
 
 .lepole-margin {
-  margin-left: 10rem;
+  margin-left: 7rem;
 }
 
 .lepole-card-title {
-  margin-left: 11rem;
+  margin-left: 7.7rem;
 }
 
 .lepole-card {
@@ -597,7 +599,7 @@ a:hover {
 }
 
 .lepole-card-dimension {
-  width: 16rem;
+  width: 14rem;
   height: 18rem;
 }
 
@@ -612,7 +614,7 @@ a:hover {
 }
 
 .lepole-top__margin {
-  margin-top: 9rem;
+  margin-top: 6rem;
 }
 
 .lepole-bottom {
@@ -622,11 +624,16 @@ a:hover {
 
 .pole-lastimage {
   margin-top: 12rem;
-  margin-left: 5rem;
+  height: 400px;
+  width: 150%;
 }
 
 .lepole-bottomimage {
   margin-bottom: 0;
+}
+
+.button-size {
+  font-size: 0.8rem;
 }
 
 .c-main-secteurs {
