@@ -1063,6 +1063,7 @@ main section.espace .no-max-w {
 .espace-cta {
   margin-top: 0;
   margin-bottom: 0;
+  color: white;
 }
 .espace-cta > div {
   width: 100%;
