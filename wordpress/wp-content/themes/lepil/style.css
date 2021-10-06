@@ -509,7 +509,7 @@ a:hover {
 }
 
 .title_size {
-  font-size: 4.65rem;
+  font-size: 4.5rem;
 }
 
 .image-l {
@@ -635,6 +635,14 @@ a:hover {
 
 .button-size {
   font-size: 0.8rem;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .c-main-secteurs {
@@ -1057,12 +1065,6 @@ h2 {
   background-size: 2.5rem;
   transition: transform 0.2s ease-in-out;
   transform: rotate(300deg);
-}
-
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
 }
 
 .espace-cta > div {
