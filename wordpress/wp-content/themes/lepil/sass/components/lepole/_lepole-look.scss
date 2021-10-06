@@ -119,10 +119,13 @@
  .lepole-top__margin{
    margin-top: 6rem;
  }
-
+section.lepole-margin.lepole-bottom{
+  position: relative;
+  z-index: 10;
+}
  .lepole-bottom{
    margin-top: -1rem;
-   margin-bottom : -23rem;
+   margin-bottom : -13rem;
  }
 
  .pole-lastimage{
