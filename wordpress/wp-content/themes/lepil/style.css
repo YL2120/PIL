@@ -870,7 +870,7 @@ main section.espace .no-max-w {
   background-color: white;
   border-radius: 100px;
   padding: 0.5rem 2rem;
-  border: 1px solid black;
+  border: 1px solid #212529;
   margin-top: 3rem;
 }
 .redirect-espace a {
@@ -878,14 +878,14 @@ main section.espace .no-max-w {
   text-decoration: none;
 }
 .redirect-espace a:link, .redirect-espace a:visited, .redirect-espace a:focus {
-  color: black;
+  color: #212529;
 }
 .redirect-espace a:hover {
   color: grey !important;
 }
 
 button:hover {
-  background-color: black;
+  background-color: #212529;
   color: white;
 }
 
@@ -912,12 +912,12 @@ main section.espace .no-max-w {
   color: white;
 }
 .accordion-item :hover {
-  background-color: black;
+  background-color: #212529;
   color: white;
 }
 
 .accordion-button {
-  background-color: black !important;
+  background-color: #212529 !important;
   border: none !important;
   color: white;
 }
@@ -930,7 +930,7 @@ main section.espace .no-max-w {
 }
 
 .accordion-body {
-  background-color: black;
+  background-color: #212529;
 }
 .accordion-body p {
   color: white;

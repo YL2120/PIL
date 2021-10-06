@@ -29,7 +29,7 @@ main section.espace .no-max-w {
   background-color: white;
   border-radius: 100px;
   padding: 0.5rem 2rem;
-  border: 1px solid black;
+  border: 1px solid #212529;
   margin-top: 3rem;
   a {
     color: black;
@@ -37,7 +37,7 @@ main section.espace .no-max-w {
     &:link,
     &:visited,
     &:focus {
-      color: black;
+      color: #212529;
     }
     &:hover {
       color: grey !important;
@@ -45,7 +45,7 @@ main section.espace .no-max-w {
   }
 }
 button:hover {
-  background-color: black;
+  background-color: #212529;
   color: white;
 }
 .image-center-outils {
@@ -68,16 +68,17 @@ main section.espace .no-max-w {
   max-width: 100% !important;
 }
 
+
 .accordion-item {
   border-bottom: 0.5px solid #656565;
   color: white;
   :hover {
-    background-color: black;
+    background-color: #212529;
     color: white;
   }
 }
 .accordion-button {
-  background-color: black !important;
+  background-color: #212529 !important;
   border: none !important;
   color: white;
 }
@@ -90,7 +91,7 @@ main section.espace .no-max-w {
 }
 
 .accordion-body {
-  background-color: black;
+  background-color: #212529;
   p {
     color: white;
   }
