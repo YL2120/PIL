@@ -1,5 +1,7 @@
 .pole-div{
-    margin-top: 22rem;
+    margin-top: 25rem;
+    margin-bottom: 6rem;
+    
 }
 
 
@@ -8,10 +10,12 @@
 }
 
 .image-l{
-    margin-top: -15rem;
+    margin-top: -23rem;
+    width: 1200px;
 }
 .par-style{
     white-space: pre-line;
+    padding: 2.5rem;
 }
 
 // FLIP CARD CSS
@@ -22,7 +26,9 @@
     height: 300px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    
   }
+  
   
   /* This container is needed to position the front and back side */
   .flip-card-inner {
@@ -72,12 +78,12 @@
   }
 
   .lepole-margin{
-    margin-left : 10rem;
+    margin-left : 7rem;
    
   }
 
   .lepole-card-title{
-    margin-left: 11rem;
+    margin-left: 7.7rem;
   }
   
 
@@ -86,6 +92,7 @@
   }
 
   .lepole-banner{
+    margin-top: -7rem;
     ul{
       li{
         color: black;
@@ -94,7 +101,7 @@
   }
 
   .lepole-card-dimension{
-    width: 16rem;
+    width: 14rem;
     height: 18rem;
   }
 
@@ -105,7 +112,31 @@
     height: 32px;
   }
 
- .lepole-top{
-  margin-bottom: 40rem;
+.lepole-card__margin{
+  margin-top: -15rem;
+}
+
+ .lepole-top__margin{
+   margin-top: 6rem;
  }
+
+ .lepole-bottom{
+   margin-top: -1rem;
+   margin-bottom : -23rem;
+ }
+
+ .pole-lastimage{
+  margin-top: 12rem;
   
+  height: 400px;
+  width: 150%;
+  
+ }
+
+ .lepole-bottomimage{
+  margin-bottom: 0;
+ }
+
+ .button-size{
+   font-size: 0.8rem;
+ }
