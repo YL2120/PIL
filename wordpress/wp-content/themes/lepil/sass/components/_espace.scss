@@ -207,7 +207,13 @@ main section.espace .no-max-w {
 }
 
 .espace-cta{
+<<<<<<< HEAD
     position: relative;
+=======
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+>>>>>>> 5994d90b4f0929b510442d6d655f5de4ab886990
   &>div{
     width: 100%;
     max-width: 100%!important;
