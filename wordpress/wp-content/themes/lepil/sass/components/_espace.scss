@@ -98,16 +98,17 @@ main section.espace .no-max-w{
         color: white !important;
     }
 }
-
-li {
+.cat-nos-outils{
+    li {
         color: white;
         font-weight: lighter;
         list-style: none;
 
     }
 
-h2 {
-    color: white;
+    h2 {
+        color: white;
+    }
 }
 
 .accordion-button:not(.collapsed) {
