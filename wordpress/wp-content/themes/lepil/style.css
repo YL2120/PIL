@@ -59,6 +59,7 @@ body {
   width: 110px;
   position: fixed;
   z-index: 1;
+  background-color: transparent !important;
 }
 .header__socials nav {
   border-right: 1px solid white;
