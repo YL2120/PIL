@@ -837,6 +837,9 @@ a:hover {
 .cont-titre-nos-espaces .titre-nos-espaces {
   padding-left: 0;
 }
+.cont-titre-nos-espaces .titre-nos-espaces p {
+  margin-bottom: 2rem;
+}
 
 .image-center {
   width: 100%;
@@ -895,7 +898,7 @@ main section.espace .no-max-w {
   color: white;
 }
 .accordion-item :hover {
-  background-color: #171717;
+  background-color: black;
   color: white;
 }
 
@@ -919,21 +922,57 @@ main section.espace .no-max-w {
   color: white;
 }
 
+.container-titles {
+  padding: 0;
+  margin: 0;
+}
 .container-titles h3 {
   color: white !important;
+  margin-bottom: 1.5rem;
 }
 
-li {
+.accordion-body {
+  padding-top: 1.5rem;
+}
+.accordion-body .margin-manager ul {
+  margin-top: 3.6rem;
+}
+.accordion-body ul {
+  padding: 0;
+}
+.accordion-body ul:nth-of-type(2) {
+  margin-top: 1.5rem;
+}
+.accordion-body li {
   color: white;
   font-weight: lighter;
   list-style: none;
+  padding-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
 }
-
-h2 {
+.accordion-body li::before {
+  margin: 0;
+  content: "+";
+  color: #ffc33b;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  line-height: 2rem;
+}
+.accordion-body h2 {
   color: white;
 }
 
-.accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active {
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+}
+
+.accordion-button:link,
+.accordion-button:visited,
+.accordion-button:hover,
+.accordion-button:active {
   text-decoration: none !important;
   box-shadow: 0px !important;
 }
@@ -945,7 +984,28 @@ h2 {
 }
 
 .accordion-button:not(.collapsed)::after {
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+  margin-left: auto;
+  content: "";
   background-image: url("images/add.svg");
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  transform: rotate(45deg);
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(300deg);
 }
 
 /*# sourceMappingURL=style.css.map */
