@@ -59,8 +59,28 @@ button:hover {
 .image-center-espace {
   width: 100%;
   margin-top: 4rem;
+  a:hover{
+      color:white;
+  }
   img {
     width: 100%;
+  }
+  &:hover{
+    cursor: pointer;
+      &::after{
+          background-color:rgb(33,37,41);
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 150px;
+          top: 50%;
+          left: 50%;
+          width: 100px;
+          height: 100px;
+          content: url('./images/arrow-down.svg');
+          transform: rotate(230deg);
+      }
   }
 }
 
@@ -186,13 +206,8 @@ main section.espace .no-max-w {
 
 }
 
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
 .espace-cta{
+    position: relative;
   &>div{
     width: 100%;
     max-width: 100%!important;
