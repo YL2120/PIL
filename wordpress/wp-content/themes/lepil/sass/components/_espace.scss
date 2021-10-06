@@ -190,13 +190,9 @@ main section.espace .no-max-w {
 
 }
 
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
 .espace-cta{
+  margin-top: 0;
+  margin-bottom: 0;
   &>div{
     width: 100%;
     max-width: 100%!important;
