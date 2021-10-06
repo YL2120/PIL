@@ -6,7 +6,7 @@
 
 
 .title_size{
-    font-size: 4.65rem;
+    font-size: 4.5rem;
 }
 
 .image-l{
@@ -140,3 +140,13 @@
  .button-size{
    font-size: 0.8rem;
  }
+
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
