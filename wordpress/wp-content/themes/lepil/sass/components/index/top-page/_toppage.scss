@@ -11,25 +11,34 @@
   margin-top: 6rem;
   h3{
     font-size: 1.2rem;
+
+  }
+  h3:first-of-type{
+    margin: 0;
   }
   p{
     font-size: 2.1rem;
   }
   ul {
     margin-right: 5.5rem;
-    margin-left: 2.47rem;
-    text-indent: -2.47rem;
+    margin-left: 0rem;
+    padding: 0;
     li {
-      list-style-type: none;
-      padding: 0.5rem 0;
-      font-size: 1rem;
-      color: grey;
+      color: white;
+      font-weight: lighter;
+      list-style: none;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
       
-      &:before {
-        content: '+';
-        color: $color-contrast;
-        padding-right: 2rem;
-      }
+    }
+    li::before {
+      margin: 0;
+      content: "+";
+      color: #ffc33b;
+      padding-right: 2rem;
     }
   }
  

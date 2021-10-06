@@ -115,8 +115,6 @@ main section.espace .no-max-w {
     h2 {
         color: white;
     }
-}
-
   ul {
     padding: 0;
   }
@@ -128,7 +126,7 @@ main section.espace .no-max-w {
     font-weight: lighter;
     list-style: none;
     padding-bottom: 0.5rem;
-    margin-left: 0.5rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -138,13 +136,11 @@ main section.espace .no-max-w {
     content: "+";
     color: #ffc33b;
     padding-right: 2rem;
-    padding-bottom: 1rem;
-    line-height: 2rem;
   }
   h2 {
     color: white;
   }
-
+}
 
 .accordion-button:not(.collapsed) {
   color: #fff !important;
