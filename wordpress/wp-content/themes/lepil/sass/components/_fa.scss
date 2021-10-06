@@ -33,6 +33,7 @@
     columns: 2;
     margin: 0;
     padding: 0;
+    width: 110%;
   }
   li {
     list-style-type: none;
@@ -40,8 +41,11 @@
     &::before {
       content: '+';
       color: $color-contrast;
-      padding-right: 2rem;
+      padding-right: 1rem;
     }
+  }
+  li:nth-of-type(5){
+    margin-top: -0.5rem;
   }
   button {
     background-color: white;
