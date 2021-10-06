@@ -104,12 +104,31 @@ main section.espace .no-max-w {
     margin-bottom: 1.5rem;
   }
 }
+<<<<<<< HEAD
 .accordion-body {
   padding-top: 1.5rem;
   .margin-manager {
     ul {
       margin-top: 3.6rem;
     }
+=======
+.cat-nos-outils{
+    li {
+        color: white;
+        font-weight: lighter;
+        list-style: none;
+
+    }
+
+    h2 {
+        color: white;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    //color: #FFF  !important;
+    //background-color: #5500C9 !important;
+>>>>>>> 539a86fc0509b9423167a36d65512a3134d2d46b
   }
   ul {
     padding: 0;
