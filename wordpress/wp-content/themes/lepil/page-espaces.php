@@ -22,7 +22,7 @@ $oembedImage = get_field('oembed-img');
         <div class="image-center d-flex no-max-w">
           <?php if($oembedImage){ ?>            
              <img
-              src=<?php echo $oembedImage ?>
+              src=<?php echo $oembedImage['url'] ?>
               class="align-items-lg-center"
               alt=""
             />
