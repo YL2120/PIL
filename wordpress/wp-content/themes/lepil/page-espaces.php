@@ -1,0 +1,587 @@
+<?php
+/*
+ Template Name: page-espaces
+ */
+?>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="l-main-header">
+      <div class="header__container">
+        <div class="header__img">
+          <img src="../images/logo.svg" alt="" />
+        </div>
+        <nav class="navbar navbar-dark bg-transparent navbar-expand-md w-100">
+          <div class="container-fluid">
+            <!-- Le bouton s'affichera en petit écran -->
+            <button
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#monMenuDeroulant"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="monMenuDeroulant">
+              <ul class="navbar-nav m-0 p-0">
+                <li class="nav-item mx-3">
+                  <a href="#" class="nav-link active">Les entreprises</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a href="#" class="nav-link">Nos espaces</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a href="#" class="nav-link">Formations</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a href="#" class="nav-link">Le Pôle</a>
+                </li>
+              </ul>
+              <ul class="d-flex justify-content-end contact-item mb-0 w-25">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    Contact
+                    <button type="button">
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="header__socials d-none d-sm-block">
+      <nav
+        class="
+          nav-socials
+          h-100
+          d-flex
+          align-items-end
+          navbar-dark
+          bg-transparent
+          text-black
+        "
+      >
+        <ul>
+          <li>Fb</li>
+          <li>Tw</li>
+          <li>Lk</li>
+          <li>In</li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="bg-white">
+      <!--Début de la page-->
+      <section class="espace">
+        <div class="text-black font-weight-bold">
+          <div class="container-espace">
+            <h1 class="fw-bold-espace text-center">Espaces et outils</h1>
+            <h1 class="fw-bold-espace text-center">de production</h1>
+          </div>
+        </div>
+        <div class="image-center d-flex no-max-w">
+          <img
+            src="..\images\Mask Group 92@2x.jpg"
+            class="align-items-lg-center"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="cat-nos-espaces text-left">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <h1 class="fw-bold-nos-espace titre-nos-espaces">Nos espaces</h1>
+            <p>Des espaces polyvalents de 15 à 1000m<sup>2</sup></p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+            <button
+              class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 redirect-espace"
+            >
+              Reservez votre espace +
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="cat-nos-outils text-left bg-dark mb-0">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <h1 class="fw-bold-nos-outils text-white titre-nos-outils">
+              Nos outils de production
+            </h1>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+
+          <div class="image-center-outils d-flex">
+            <img
+              src="..\images\image 63@2x.jpg"
+              class="align-items-lg-center"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item bg-dark">
+            <h2 id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <h2 class="accordion-script">Salle de mixage cinéma</h2>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-4 top-col">
+                    <p>
+                      Le plus grand cluster d'entreprises wallon dédié à
+                      l'audiovisuel, aux métiers du digital, au gaming et à
+                      l'AR/ VR.
+                    </p>
+                  </div>
+                  <div class="col-4 ">
+                    <div class="container container-titles">
+                      <h3 class="fw-bold">Installation</h3>
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de mixage</li>
+                      <li>Salles de montage son/image</li>
+                      <li>Salles d'étalonnage</li>
+                      <li>Centre dédié à I'AR/VR</li>
+                      <li>Studio green/white key</li>
+                      <li>Salles de réunion</li>
+                      <li>Espaces événementiels</li>
+                    </ul>
+                  </div>
+                  <div class="col-4 margin-manager">
+                    <div class="container container-titles">
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de sport totalement équipée avec vestiaires</li>
+                      <li>Salle de ressourcement pour une pause agréable</li>
+                      <li>Des espaces détentes répartis dans le bâtiment</li>
+                      <li>Une terrasse aménagée</li>
+                      <li>Une cafétéria équipée</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                <h2>Salles d'étalonnage</h2>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-4 top-col">
+                    <p>
+                      Le plus grand cluster d'entreprises wallon dédié à
+                      l'audiovisuel, aux métiers du digital, au gaming et à
+                      l'AR/ VR.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <div class="container container-titles">
+                      <h3 class="fw-bold">Installation</h3>
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de mixage</li>
+                      <li>Salles de montage son/image</li>
+                      <li>Salles d'étalonnage</li>
+                      <li>Centre dédié à I'AR/VR</li>
+                      <li>Studio green/white key</li>
+                      <li>Salles de réunion</li>
+                      <li>Espaces événementiels</li>
+                    </ul>
+                  </div>
+                  <div class="col-4 margin-manager">
+                    <div class="container container-titles">
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de sport totalement équipée avec vestiaires</li>
+                      <li>Salle de ressourcement pour une pause agréable</li>
+                      <li>Des espaces détentes répartis dans le bâtiment</li>
+                      <li>Une terrasse aménagée</li>
+                      <li>Une cafétéria équipée</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                <h2>Centre dédié à l'AR/VR</h2>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-4 top-col">
+                    <p>
+                      Le plus grand cluster d'entreprises wallon dédié à
+                      l'audiovisuel, aux métiers du digital, au gaming et à
+                      l'AR/ VR.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <div class="container container-titles">
+                      <h3 class="fw-bold">Installation</h3>
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de mixage</li>
+                      <li>Salles de montage son/image</li>
+                      <li>Salles d'étalonnage</li>
+                      <li>Centre dédié à I'AR/VR</li>
+                      <li>Studio green/white key</li>
+                      <li>Salles de réunion</li>
+                      <li>Espaces événementiels</li>
+                    </ul>
+                  </div>
+                  <div class="col-4 margin-manager">
+                    <div class="container container-titles">
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de sport totalement équipée avec vestiaires</li>
+                      <li>Salle de ressourcement pour une pause agréable</li>
+                      <li>Des espaces détentes répartis dans le bâtiment</li>
+                      <li>Une terrasse aménagée</li>
+                      <li>Une cafétéria équipée</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                <h2>Studion green/white key</h2>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-4 top-col">
+                    <p>
+                      Le plus grand cluster d'entreprises wallon dédié à
+                      l'audiovisuel, aux métiers du digital, au gaming et à
+                      l'AR/ VR.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <div class="container container-titles">
+                      <h3 class="fw-bold">Installation</h3>
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de mixage</li>
+                      <li>Salles de montage son/image</li>
+                      <li>Salles d'étalonnage</li>
+                      <li>Centre dédié à I'AR/VR</li>
+                      <li>Studio green/white key</li>
+                      <li>Salles de réunion</li>
+                      <li>Espaces événementiels</li>
+                    </ul>
+                  </div>
+                  <div class="col-4 margin-manager">
+                    <div class="container container-titles">
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de sport totalement équipée avec vestiaires</li>
+                      <li>Salle de ressourcement pour une pause agréable</li>
+                      <li>Des espaces détentes répartis dans le bâtiment</li>
+                      <li>Une terrasse aménagée</li>
+                      <li>Une cafétéria équipée</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                <h2>Centre dédié à l'AR/VR</h2>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-4 top-col">
+                    <p>
+                      Le plus grand cluster d'entreprises wallon dédié à
+                      l'audiovisuel, aux métiers du digital, au gaming et à
+                      l'AR/ VR.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <div class="container container-titles">
+                      <h3 class="fw-bold">Installation</h3>
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de mixage</li>
+                      <li>Salles de montage son/image</li>
+                      <li>Salles d'étalonnage</li>
+                      <li>Centre dédié à I'AR/VR</li>
+                      <li>Studio green/white key</li>
+                      <li>Salles de réunion</li>
+                      <li>Espaces événementiels</li>
+                    </ul>
+                  </div>
+                  <div class="col-4 margin-manager">
+                    <div class="container container-titles">
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de sport totalement équipée avec vestiaires</li>
+                      <li>Salle de ressourcement pour une pause agréable</li>
+                      <li>Des espaces détentes répartis dans le bâtiment</li>
+                      <li>Une terrasse aménagée</li>
+                      <li>Une cafétéria équipée</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                <h2>Espaces événementiels</h2>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-4 top-col">
+                    <p>
+                      Le plus grand cluster d'entreprises wallon dédié à
+                      l'audiovisuel, aux métiers du digital, au gaming et à
+                      l'AR/ VR.
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <div class="container container-titles">
+                      <h3 class="fw-bold">Installation</h3>
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de mixage</li>
+                      <li>Salles de montage son/image</li>
+                      <li>Salles d'étalonnage</li>
+                      <li>Centre dédié à I'AR/VR</li>
+                      <li>Studio green/white key</li>
+                      <li>Salles de réunion</li>
+                      <li>Espaces événementiels</li>
+                    </ul>
+                  </div>
+                  <div class="col-4 margin-manager">
+                    <div class="container container-titles">
+                    </div>
+                    <ul class="w-100">
+                      <li>Salle de sport totalement équipée avec vestiaires</li>
+                      <li>Salle de ressourcement pour une pause agréable</li>
+                      <li>Des espaces détentes répartis dans le bâtiment</li>
+                      <li>Une terrasse aménagée</li>
+                      <li>Une cafétéria équipée</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section class="espace-cta bg-dark">
+          <div class="image-center-espace d-flex no-max-w">
+            <img
+              src="..\images\Mask Group 93@2x.jpg"
+              class="align-items-lg-center"
+              alt=""
+            />
+            <div class="top-left">
+              <p>Vous êtes interesés par ?</p>
+              <h2>Un bureau, une location ponctuelle d'un de nos espaces ou un moyen de production ?</h2>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white">
+      <div class="test">
+        <div class="row">
+          <div class="col-5">
+            <div class="row height-manager">
+              <div class="col-4 left-column">
+                <h4>Pôle Image de Liège</h4>
+                <div class="bottom-info">
+                  <p>info@lepole.be</p>
+                  <p>Rue de Mulhouse, 36</p>
+                  <p>4020 Liège, Belgique</p>
+                </div>
+              </div>
+              <div class="col-8 phone-info">
+                <p class="rounded-circle">+32 4 239 69 01</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-7 separation">
+            <div class="row height-manager">
+              <div
+                class="
+                  col-6
+                  d-flex
+                  justify-content-between
+                  flex-column
+                  espace-puce
+                "
+              >
+                <ul>
+                  <li><a href="#">Les entreprises</a></li>
+                  <li><a href="#">Nos espaces</a></li>
+                  <li><a href="#">Le Pôle</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="confi">
+                  <p>Le Pôle image © 2021</p>
+                  <a href="#">Politique de confidentialité</a>
+                </div>
+              </div>
+              <div class="col-6 made-by">
+                <p>
+                  design by
+                  <a class="text-white" href="#">savoirfaire.digital</a>
+                </p>
+                <p>Coding by <a class="text-white" href="#">becode.org</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
