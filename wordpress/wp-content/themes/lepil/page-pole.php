@@ -83,16 +83,17 @@ print_r ($flipcartes);
           <div class="container lepole-margin">
             <div class="row ">
               
-              <div class="col-4 flip-col">
+              
               <?php
                             foreach($flipcartes as $element){
-                              foreach($element as $lines){
+                              
                                 ?>
+              <div class="col-4 flip-col">
                 <div class="flip-card">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
                    
-                      <img src="" alt="Avatar" />
+                      <img src="<?php echo $element[url]?>" alt="Avatar" />
                     </div>
                     <div
                       class="
@@ -104,20 +105,21 @@ print_r ($flipcartes);
                       "
                     >
                       <div class="mt-4">
-                        <h5 class=""><?php echo $lines[nom] ?></h5>
+                        <h5 class=""><?php echo $element[nom] ?></h5>
                       </div>
 
                       <div>
-                        <p><?php echo $lines[role] ?></p>
-                        <p><?php echo $lines[email] ?></p>
+                        <p><?php echo $element[role] ?></p>
+                        <p><?php echo $element[email] ?></p>
                         
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <?php }} ?>
-            </div>
+              
+              <?php } ?>
+              </div>
           </div>
         </div>
       </section>
@@ -130,7 +132,7 @@ print_r ($flipcartes);
                 <div class="mb-4 mt-2">
                 <h3 class="fw-bold">Actualités</h3>
               </div>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-dark rounded-pill w-75 button-size">Suivez-nous <i class="fab fa-facebook-f"></i></button></a>
+                <a href="https://www.facebook.com/PoleImageDeLiege" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-dark rounded-pill w-75 button-size">Suivez-nous <i class="fab fa-facebook-f"></i></button></a>
               </div>
               <div class="col-9">
                 <div class="row">
