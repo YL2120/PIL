@@ -703,9 +703,6 @@ section.lepole-margin.lepole-bottom {
   left: 0;
   border-right: 1px solid white;
 }
-.secteurs__container .secteurs__sideMenu .test > * {
-  margin-left: 27.5%;
-}
 .secteurs__container .secteurs__sideMenu .test h1 {
   display: inline;
 }
@@ -896,6 +893,79 @@ section.lepole-margin.lepole-bottom {
   align-items: center;
 }
 
+@media screen and (min-width: 1500px) {
+  .secteurs__container .secteurs__sideMenu .test > * {
+    margin-left: 0;
+  }
+}
+.espace button:hover {
+  background-color: #212529;
+  color: white;
+}
+.espace .accordion-item {
+  border-bottom: 0.5px solid #656565;
+  color: white;
+}
+.espace .accordion-item :hover {
+  background-color: #212529;
+  color: white;
+}
+.espace .accordion-button {
+  background-color: #212529 !important;
+  border: none !important;
+  color: white;
+}
+.espace .accordion-header {
+  border: none !important;
+}
+.espace .accordion-header .accordion-header:hover {
+  border: none;
+}
+.espace .accordion-body {
+  background-color: #212529;
+}
+.espace .accordion-body p {
+  color: white;
+}
+.espace .accordion-button:not(.collapsed) {
+  color: #fff !important;
+}
+.espace .accordion-button:link,
+.espace .accordion-button:visited,
+.espace .accordion-button:hover,
+.espace .accordion-button:active {
+  text-decoration: none !important;
+  box-shadow: 0px !important;
+}
+.espace .accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem transparent !important;
+}
+.espace .accordion-button:not(.collapsed)::after {
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("images/add.svg");
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  transform: rotate(45deg);
+}
+.espace .accordion-button::after {
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(300deg);
+}
+
 .container-espace {
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -941,11 +1011,6 @@ main section.espace .no-max-w {
   color: grey !important;
 }
 
-button:hover {
-  background-color: #212529;
-  color: white;
-}
-
 .image-center-outils img {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -983,35 +1048,6 @@ button:hover {
 
 main section.espace .no-max-w {
   max-width: 100% !important;
-}
-
-.accordion-item {
-  border-bottom: 0.5px solid #656565;
-  color: white;
-}
-.accordion-item :hover {
-  background-color: #212529;
-  color: white;
-}
-
-.accordion-button {
-  background-color: #212529 !important;
-  border: none !important;
-  color: white;
-}
-
-.accordion-header {
-  border: none !important;
-}
-.accordion-header .accordion-header:hover {
-  border: none;
-}
-
-.accordion-body {
-  background-color: #212529;
-}
-.accordion-body p {
-  color: white;
 }
 
 .container-titles {
@@ -1055,49 +1091,6 @@ main section.espace .no-max-w {
 }
 .cat-nos-outils h2 {
   color: white;
-}
-
-.accordion-button:not(.collapsed) {
-  color: #fff !important;
-}
-
-.accordion-button:link,
-.accordion-button:visited,
-.accordion-button:hover,
-.accordion-button:active {
-  text-decoration: none !important;
-  box-shadow: 0px !important;
-}
-
-.accordion-button:focus {
-  z-index: 3;
-  outline: 0;
-  box-shadow: 0 0 0 0.1rem transparent !important;
-}
-
-.accordion-button:not(.collapsed)::after {
-  flex-shrink: 0;
-  width: 4rem;
-  height: 4rem;
-  margin-left: auto;
-  content: "";
-  background-image: url("images/add.svg");
-  background-repeat: no-repeat;
-  background-size: 2.5rem;
-  transform: rotate(45deg);
-}
-
-.accordion-button::after {
-  flex-shrink: 0;
-  width: 4rem;
-  height: 4rem;
-  margin-left: auto;
-  content: "";
-  background-image: url("images/arrow-down.svg");
-  background-repeat: no-repeat;
-  background-size: 2.5rem;
-  transition: transform 0.2s ease-in-out;
-  transform: rotate(300deg);
 }
 
 .espace-cta {

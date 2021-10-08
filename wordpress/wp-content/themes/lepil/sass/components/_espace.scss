@@ -1,3 +1,80 @@
+.espace {
+  button:hover {
+    background-color: #212529;
+    color: white;
+  }
+  .accordion-item {
+    border-bottom: 0.5px solid #656565;
+    color: white;
+    :hover {
+      background-color: #212529;
+      color: white;
+    }
+  }
+  .accordion-button {
+    background-color: #212529 !important;
+    border: none !important;
+    color: white;
+  }
+
+  .accordion-header {
+    border: none !important;
+    .accordion-header:hover {
+      border: none;
+    }
+  }
+
+  .accordion-body {
+    background-color: #212529;
+    p {
+      color: white;
+    }
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #fff !important;
+  }
+
+  .accordion-button:link,
+  .accordion-button:visited,
+  .accordion-button:hover,
+  .accordion-button:active {
+    text-decoration: none !important;
+    box-shadow: 0px !important;
+  }
+
+  .accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem transparent !important;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    flex-shrink: 0;
+    width: 4rem;
+    height: 4rem;
+    margin-left: auto;
+    content: '';
+    background-image: url('images/add.svg');
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+    transform: rotate(45deg);
+  }
+
+  .accordion-button::after {
+    flex-shrink: 0;
+    width: 4rem;
+    height: 4rem;
+    margin-left: auto;
+    content: '';
+    background-image: url('images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(300deg);
+  }
+}
+
 .container-espace {
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -44,10 +121,7 @@ main section.espace .no-max-w {
     }
   }
 }
-button:hover {
-  background-color: #212529;
-  color: white;
-}
+
 .image-center-outils {
   img {
     margin-top: 4rem;
@@ -59,63 +133,34 @@ button:hover {
 .image-center-espace {
   width: 100%;
   margin-top: 4rem;
-  padding: 0!important;
-  a:hover{
-      color:white;
+  padding: 0 !important;
+  a:hover {
+    color: white;
   }
   img {
     width: 100%;
   }
-  &:hover{
+  &:hover {
     cursor: pointer;
-      &::after{
-          background-color:rgb(33,37,41);
-          position: absolute;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 150px;
-          top: 50%;
-          left: 50%;
-          width: 100px;
-          height: 100px;
-          content: url('./images/arrow-down.svg');
-          transform: rotate(230deg);
-      }
+    &::after {
+      background-color: rgb(33, 37, 41);
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 150px;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      content: url('./images/arrow-down.svg');
+      transform: rotate(230deg);
+    }
   }
 }
 
 main section.espace .no-max-w {
   max-width: 100% !important;
-}
-
-
-.accordion-item {
-  border-bottom: 0.5px solid #656565;
-  color: white;
-  :hover {
-    background-color: #212529;
-    color: white;
-  }
-}
-.accordion-button {
-  background-color: #212529 !important;
-  border: none !important;
-  color: white;
-}
-
-.accordion-header {
-  border: none !important;
-  .accordion-header:hover {
-    border: none;
-  }
-}
-
-.accordion-body {
-  background-color: #212529;
-  p {
-    color: white;
-  }
 }
 
 .container-titles {
@@ -126,16 +171,16 @@ main section.espace .no-max-w {
     margin-bottom: 1.5rem;
   }
 }
-.cat-nos-outils{
-    li {
-        color: white;
-        font-weight: lighter;
-        list-style: none;
-    }
+.cat-nos-outils {
+  li {
+    color: white;
+    font-weight: lighter;
+    list-style: none;
+  }
 
-    h2 {
-        color: white;
-    }
+  h2 {
+    color: white;
+  }
   ul {
     padding: 0;
   }
@@ -154,7 +199,7 @@ main section.espace .no-max-w {
   }
   li::before {
     margin: 0;
-    content: "+";
+    content: '+';
     color: #ffc33b;
     padding-right: 2rem;
   }
@@ -163,61 +208,17 @@ main section.espace .no-max-w {
   }
 }
 
-.accordion-button:not(.collapsed) {
-  color: #fff !important;
-}
-
-.accordion-button:link,
-.accordion-button:visited,
-.accordion-button:hover,
-.accordion-button:active {
-  text-decoration: none !important;
-  box-shadow: 0px !important;
-}
-
-.accordion-button:focus {
-  z-index: 3;
-  outline: 0;
-  box-shadow: 0 0 0 0.1rem transparent !important;
-}
-
-.accordion-button:not(.collapsed)::after {
-    flex-shrink: 0;
-    width: 4rem;
-    height: 4rem;
-    margin-left: auto;
-    content: "";
-    background-image: url("images/add.svg");
-    background-repeat: no-repeat;
-    background-size: 2.5rem;
-    transform: rotate(45deg);
-}
-
-.accordion-button::after {
-    flex-shrink: 0;
-    width: 4rem;
-    height: 4rem;
-    margin-left: auto;
-    content: "";
-    background-image: url("images/arrow-down.svg");
-    background-repeat: no-repeat;
-    background-size: 2.5rem;
-    transition: transform .2s ease-in-out;
-    transform: rotate(300deg);
-
-}
-
-.espace-cta{
-    position: relative;
+.espace-cta {
+  position: relative;
   margin-top: 0;
   margin-bottom: 0;
   color: white;
-  &>div{
+  & > div {
     width: 100%;
-    max-width: 100%!important;
+    max-width: 100% !important;
     position: relative;
   }
-  .top-left{
+  .top-left {
     position: absolute;
     top: 0;
     left: 0;
@@ -228,7 +229,7 @@ main section.espace .no-max-w {
     width: 50%;
     height: 100%;
     margin-left: 10%;
-    &>*{
+    & > * {
       text-align: left;
     }
   }
