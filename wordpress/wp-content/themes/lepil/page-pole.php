@@ -93,7 +93,7 @@ print_r ($flipcartes);
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
                    
-                      <img src="<?php echo $element[url]?>" alt="Avatar" />
+                      <img src="<?php echo $element["url"]?>" alt="Avatar" />
                     </div>
                     <div
                       class="
@@ -105,12 +105,12 @@ print_r ($flipcartes);
                       "
                     >
                       <div class="mt-4">
-                        <h5 class=""><?php echo $element[nom] ?></h5>
+                        <h5 class=""><?php echo $element["nom"] ?></h5>
                       </div>
 
                       <div>
-                        <p><?php echo $element[role] ?></p>
-                        <p><?php echo $element[email] ?></p>
+                        <p><?php echo $element["role"] ?></p>
+                        <p><?php echo $element["email"] ?></p>
                         
                       </div>
                     </div>
