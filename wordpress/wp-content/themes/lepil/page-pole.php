@@ -20,7 +20,6 @@ $gTexte3 = get_field('grand_texte3');
 $photo = get_field('Photo');
 $photo_src = $photo['sizes']['my_custom_size'];
 $flipcartes = get_field('flip-cartes');
-
 ?>
 
 <main class="bg-white">
@@ -93,8 +92,16 @@ $flipcartes = get_field('flip-cartes');
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
                    
+<<<<<<< HEAD
                       <img src="<?php 
                       echo $element['photo']['url'];?>" alt="Avatar" />
+=======
+<<<<<<< HEAD
+                      <img src="<?php echo $element['photo']['ID']?>" alt="Avatar" />
+=======
+                      <img src="<?php echo $element["url"]?>" alt="Avatar" />
+>>>>>>> 79de491157760b736b83aed024d841cb917756c6
+>>>>>>> 09f0e751369b25fe4ac05dd10d30bee4b1ac75aa
                     </div>
                     <div
                       class="
@@ -106,12 +113,30 @@ $flipcartes = get_field('flip-cartes');
                       "
                     >
                       <div class="mt-4">
+<<<<<<< HEAD
                         <h5 class=""><?php echo $element['nom'] ?></h5>
                       </div>
 
                       <div>
                         <p><?php echo $element['role'] ?></p>
                         <p><?php echo $element['email'] ?></p>
+=======
+<<<<<<< HEAD
+                        <h5 class=""><?php echo $element['nom'] ?></h5>
+                      </div>
+
+                      <div>
+                        <p><?php echo $element['role'] ?></p>
+                        <p><?php echo $element['email'] ?></p>
+=======
+                        <h5 class=""><?php echo $element["nom"] ?></h5>
+                      </div>
+
+                      <div>
+                        <p><?php echo $element["role"] ?></p>
+                        <p><?php echo $element["email"] ?></p>
+>>>>>>> 79de491157760b736b83aed024d841cb917756c6
+>>>>>>> 09f0e751369b25fe4ac05dd10d30bee4b1ac75aa
                         
                       </div>
                     </div>
