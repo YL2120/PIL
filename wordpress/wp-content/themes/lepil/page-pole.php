@@ -20,7 +20,7 @@ $gTexte3 = get_field('grand_texte3');
 $photo = get_field('Photo');
 $photo_src = $photo['sizes']['my_custom_size'];
 $flipcartes = get_field('flip-cartes');
-print_r ($flipcartes);
+
 ?>
 
 <main class="bg-white">
@@ -86,14 +86,15 @@ print_r ($flipcartes);
               
               <?php
                             foreach($flipcartes as $element){
-                              
+                             
                                 ?>
               <div class="col-4 flip-col">
                 <div class="flip-card">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
                    
-                      <img src="<?php echo $element[url]?>" alt="Avatar" />
+                      <img src="<?php 
+                      echo $element['photo']['url'];?>" alt="Avatar" />
                     </div>
                     <div
                       class="
@@ -105,12 +106,12 @@ print_r ($flipcartes);
                       "
                     >
                       <div class="mt-4">
-                        <h5 class=""><?php echo $element[nom] ?></h5>
+                        <h5 class=""><?php echo $element['nom'] ?></h5>
                       </div>
 
                       <div>
-                        <p><?php echo $element[role] ?></p>
-                        <p><?php echo $element[email] ?></p>
+                        <p><?php echo $element['role'] ?></p>
+                        <p><?php echo $element['email'] ?></p>
                         
                       </div>
                     </div>
@@ -199,17 +200,7 @@ print_r ($flipcartes);
       </section>
     
       <section class="espace-cta bg-dark lepole-bottomimage p-0">
-        <div class="image-center-espace  d-flex no-max-w ">
-          <img
-            src="..\images\Mask Group 93@2x.jpg"
-            class="align-items-lg-center pole-lastimage"
-            alt=""
-          />
-          <div class="top-left">
-            <p class="text-white">Vous êtes interesés par ?</p>
-            <h2>Un bureau, une location ponctuelle d'un de nos espaces ou un moyen de production ?</h2>
-          </div>
-        </div>
+       <?php get_template_part('template-parts/content', 'bottomimage') ?>
       </section>
     
     

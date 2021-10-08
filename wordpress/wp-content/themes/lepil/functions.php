@@ -33,7 +33,7 @@ add_filter('upload_mimes', 'add_file_types_to_uploads');
 
 add_image_size('my_custom_size',1216,490,true);
 add_image_size('formationImgSize',true);
-add_image_size('flipcard_size',248,298,true);
+
 
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
