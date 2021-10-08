@@ -18,6 +18,7 @@ $imageOutilsProductions = get_field('image_outils_productions');
 $titreOutilsProductions = get_field('titre_outils_productions');
 $imageOutilsProductions = get_field('image_outils_productions');
 $introOutilsProductions = get_field('introduction_outils_productions');
+$accordionRepeater1 = get_field('repeater_accordeons_outils_de_productions1');
 ?>
 
 <main class="bg-white">
@@ -78,7 +79,6 @@ $introOutilsProductions = get_field('introduction_outils_productions');
           <?php } ?>
           </div>
         </div>
-
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item bg-dark">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -92,20 +92,20 @@ $introOutilsProductions = get_field('introduction_outils_productions');
               >
                 <h2 class="accordion-script">
                 <?php 
-                  function displayAccordion(){
-                    for ($i=0;$i<15;$i++) {
-                      ${'titre'.($i+1)} = get_field(${'titre_outils_productions1'.($i+1)});
-                        if ($list_item) {
-                        foreach ($list_item as $element) {
-                        echo 'li';
-                        echo $element;
-                        echo '/li';
+                      function displayAccordion(){
+                        for ($i=0;$i<15;$i++) {
+                          ${'titre'.($i+1)} = get_field(${'titre_du_menu'.($i+1)});
+                            print_r(${'titre'.($i+1)})  ;
                       }
                     }
-                  }
-                }
+                foreach($accordionRepeater1 as $element){
+            
                 displayAccordion();
-                ?>
+
+                }
+
+                  
+                ?> 
                 </h2>
               </button>
             </h2>
