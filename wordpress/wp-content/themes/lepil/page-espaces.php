@@ -18,7 +18,7 @@ $imageOutilsProductions = get_field('image_outils_productions');
 $titreOutilsProductions = get_field('titre_outils_productions');
 $imageOutilsProductions = get_field('image_outils_productions');
 $introOutilsProductions = get_field('introduction_outils_productions');
-$titreDuMenu = get_field('titre_du_menu');
+$accordionRepeater1 = get_field('repeater_accordeons_outils_de_productions1');
 ?>
 
 <main class="bg-white">
@@ -79,10 +79,9 @@ $titreDuMenu = get_field('titre_du_menu');
           <?php } ?>
           </div>
         </div>
-
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item bg-dark">
-            <h2 id="flush-headingOne">
+            <h2 class="accordion-header" id="flush-headingOne">
               <button
                 class="accordion-button collapsed"
                 type="button"
@@ -91,7 +90,23 @@ $titreDuMenu = get_field('titre_du_menu');
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                <h2 class="accordion-script"><?php echo $titreDuMenu ?></h2>
+                <h2 class="accordion-script">
+                <?php 
+                      function displayAccordion(){
+                        for ($i=0;$i<15;$i++) {
+                          ${'titre'.($i+1)} = get_field(${'titre_du_menu'.($i+1)});
+                            print_r(${'titre'.($i+1)})  ;
+                      }
+                    }
+                foreach($accordionRepeater1 as $element){
+            
+                displayAccordion();
+
+                }
+
+                  
+                ?> 
+                </h2>
               </button>
             </h2>
             <div
@@ -106,7 +121,7 @@ $titreDuMenu = get_field('titre_du_menu');
                     <p>
                       Le plus grand cluster d'entreprises wallon dédié à
                       l'audiovisuel, aux métiers du digital, au gaming et à
-                      l'AR/VR.
+                      l'AR/ VR.
                     </p>
                   </div>
                   <div class="col-4 ">
@@ -138,7 +153,7 @@ $titreDuMenu = get_field('titre_du_menu');
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <!-- <div class="accordion-item bg-dark">
             <h2 class="accordion-header" id="flush-headingTwo">
               <button
                 class="accordion-button collapsed"
@@ -195,7 +210,7 @@ $titreDuMenu = get_field('titre_du_menu');
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item bg-dark">
             <h2 class="accordion-header" id="flush-headingThree">
               <button
                 class="accordion-button collapsed"
@@ -252,7 +267,7 @@ $titreDuMenu = get_field('titre_du_menu');
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item bg-dark">
             <h2 class="accordion-header" id="flush-headingFour">
               <button
                 class="accordion-button collapsed"
@@ -309,7 +324,7 @@ $titreDuMenu = get_field('titre_du_menu');
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item bg-dark">
             <h2 class="accordion-header" id="flush-headingFive">
               <button
                 class="accordion-button collapsed"
@@ -366,7 +381,7 @@ $titreDuMenu = get_field('titre_du_menu');
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item bg-dark">
             <h2 class="accordion-header" id="flush-headingSix">
               <button
                 class="accordion-button collapsed"
@@ -424,21 +439,9 @@ $titreDuMenu = get_field('titre_du_menu');
             </div>
           </div>
         </div>
-        </section>
-        <section class="espace-cta bg-dark">
-          <div class="image-center-espace d-flex no-max-w">
-            <img
-              src="..\images\Mask Group 93@2x.jpg"
-              class="align-items-lg-center"
-              alt=""
-            />
-            <div class="top-left">
-              <p>Vous êtes interesés par ?</p>
-              <h2>Un bureau, une location ponctuelle d'un de nos espaces ou un moyen de production ?</h2>
-            </div>
-          </div>
-      </section>
-    </main>
+
+         -->
+    </main> 
 
 <?php
 get_footer();
