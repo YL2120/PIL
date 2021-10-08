@@ -8,6 +8,17 @@ get_header();
 $punchLine1 = get_field('punch_line');
 $punchLine2 = get_field('punch_line_2');
 $oembedImage = get_field('oembed-img');
+$titreEspace = get_field('titre__espaces');
+$texteEspace = get_field('texte_espaces');
+$texteWysiwygespaces = get_field('texte_wysiwyg_espaces');
+$boutonLienespace = get_field('bouton_lien_espace'); // à vérifier
+$titreOutilsProductions = get_field('titre_outils_productions');
+$introOutilsProductions = get_field('introduction_outils_productions');
+$imageOutilsProductions = get_field('image_outils_productions');
+$titreOutilsProductions = get_field('titre_outils_productions');
+$imageOutilsProductions = get_field('image_outils_productions');
+$introOutilsProductions = get_field('introduction_outils_productions');
+$titreDuMenu = get_field('titre_du_menu');
 ?>
 
 <main class="bg-white">
@@ -33,22 +44,14 @@ $oembedImage = get_field('oembed-img');
       <section class="cat-nos-espaces text-left">
         <div class="row">
           <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <h1 class="fw-bold-nos-espace titre-nos-espaces">Nos espaces</h1>
-            <p>Des espaces polyvalents de 15 à 1000m<sup>2</sup></p>
+            <h1 class="fw-bold-nos-espace titre-nos-espaces"> <?php echo $titreEspace ?></h1>
+            <p> <?php echo $texteEspace ?></p>
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
+            <p> <?php echo $texteWysiwygespaces ?></p>
             <button
-              class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 redirect-espace"
-            >
-              Reservez votre espace +
+              class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 redirect-espace">
+                <a href="<?php echo get_permalink(163); ?>">Contact</a> <!-- à regarder -->
             </button>
           </div>
         </div>
@@ -58,26 +61,22 @@ $oembedImage = get_field('oembed-img');
         <div class="row">
           <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
             <h1 class="fw-bold-nos-outils text-white titre-nos-outils">
-              Nos outils de production
+              <?php echo $titreOutilsProductions ?>
             </h1>
           </div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
             <p class="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              <?php echo $introOutilsProductions ?>
             </p>
           </div>
 
           <div class="image-center-outils d-flex">
-            <img
-              src="..\images\image 63@2x.jpg"
-              class="align-items-lg-center"
+          <?php if($imageOutilsProductions){ ?>            
+             <img
+              src=<?php echo $imageOutilsProductions['url'] ?>
               alt=""
             />
+          <?php } ?>
           </div>
         </div>
 
@@ -92,7 +91,7 @@ $oembedImage = get_field('oembed-img');
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                <h2 class="accordion-script">Salle de mixage cinéma</h2>
+                <h2 class="accordion-script"><?php echo $titreDuMenu ?></h2>
               </button>
             </h2>
             <div
@@ -107,7 +106,7 @@ $oembedImage = get_field('oembed-img');
                     <p>
                       Le plus grand cluster d'entreprises wallon dédié à
                       l'audiovisuel, aux métiers du digital, au gaming et à
-                      l'AR/ VR.
+                      l'AR/VR.
                     </p>
                   </div>
                   <div class="col-4 ">
