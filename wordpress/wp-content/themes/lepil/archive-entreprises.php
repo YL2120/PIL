@@ -44,14 +44,13 @@
                                     </li>
                             <?php $cpt1++;
                              if ($cpt1%10 == 0){
-                                echo'   </ul>
-
+                                echo'           </ul>
                                            </form>
                                        </div>
                                      </div>
                                    </div>
                                </div>';
-                               }
+                                    }
                                 }
                             }
                         ?>
@@ -227,8 +226,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
     </main>
-
 <?php
     get_footer();
+   
 ?>
     

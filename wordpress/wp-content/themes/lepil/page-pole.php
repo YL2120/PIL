@@ -20,7 +20,7 @@ $gTexte3 = get_field('grand_texte3');
 $photo = get_field('Photo');
 $photo_src = $photo['sizes']['my_custom_size'];
 $flipcartes = get_field('flip-cartes');
-print_r ($flipcartes);
+print_r($flipcartes)
 ?>
 
 <main class="bg-white">
@@ -93,7 +93,7 @@ print_r ($flipcartes);
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
                    
-                      <img src="<?php echo $element[url]?>" alt="Avatar" />
+                      <img src="<?php echo $element['photo']['ID']?>" alt="Avatar" />
                     </div>
                     <div
                       class="
@@ -105,12 +105,12 @@ print_r ($flipcartes);
                       "
                     >
                       <div class="mt-4">
-                        <h5 class=""><?php echo $element[nom] ?></h5>
+                        <h5 class=""><?php echo $element['nom'] ?></h5>
                       </div>
 
                       <div>
-                        <p><?php echo $element[role] ?></p>
-                        <p><?php echo $element[email] ?></p>
+                        <p><?php echo $element['role'] ?></p>
+                        <p><?php echo $element['email'] ?></p>
                         
                       </div>
                     </div>
