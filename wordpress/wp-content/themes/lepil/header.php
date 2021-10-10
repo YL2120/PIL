@@ -25,21 +25,21 @@
                     <div class="collapse navbar-collapse" id="monMenuDeroulant">
                         <ul class="navbar-nav m-0 p-0">
                             <li class="nav-item mx-3">
-                                <a href="archive-entreprise.php" class="nav-link active">Les entreprises</a>
+                                <a href="archive-entreprises" class="nav-link active">Les entreprises</a>
                             </li>
                             <li class="nav-item mx-3">
-                                <a href="page-espaces.php" class="nav-link">Nos espaces</a>
+                                <a href="page-espaces" class="nav-link">Nos espaces</a>
                             </li>
                             <li class="nav-item mx-3">
                                 <a href="#" class="nav-link">Formations</a>
                             </li>
                             <li class="nav-item mx-3">
-                                <a href="page-pole.php" class="nav-link">Le Pôle</a>
+                                <a href="page-pole" class="nav-link">Le Pôle</a>
                             </li>
                         </ul>
                         <ul class="d-flex justify-content-end contact-item mb-0 w-25">
                             <li class="nav-item">
-                                <a href="page-contact.php" class="nav-link">
+                                <a href="page-contact" class="nav-link">
                                     Contact
                                     <button type="button"><i class="fas fa-arrow-right"></i></button>
                                 </a>
