@@ -6,7 +6,7 @@ The PIL contacted BeCode to build this new website.
 
 ## PIL's request
 
-The PIL employees would like to edit the content of their website regularly & easily. They ask for a WordPress interface.
+The PIL employees would like to edit the content of their website regularly & easily. They asked for a WordPress interface.
 
 ## PIL's website
 
